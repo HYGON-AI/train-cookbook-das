@@ -75,18 +75,18 @@ Qwen2 和 Qwen2.5 是阿里通义千问第二代大语言模型，支持 0.5B ~ 
     </tr>
     <tr>
       <td>qwen2.5-3B</td>
-      <td>-</td><td>-</td>
-      <td>-</td><td>-</td><td>-</td>
-      <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-      <td>-</td>
+      <td>8</td><td>fp16</td>
+      <td>1</td><td>32</td><td>16384</td>
+      <td>1</td><td>2</td><td>-</td><td>-</td><td>1</td>
+      <td>5554.8</td>
       <td align="center">-</td>
     </tr>
     <tr>
       <td>qwen2.5-7B</td>
-      <td>-</td><td>-</td>
-      <td>-</td><td>-</td><td>-</td>
-      <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-      <td>-</td>
+      <td>8</td><td>fp16</td>
+      <td>1</td><td>32</td><td>16384</td>
+      <td>2</td><td>2</td><td>-</td><td>-</td><td>2</td>
+      <td>2101.8</td>
       <td align="center">-</td>
     </tr>
     <tr>
