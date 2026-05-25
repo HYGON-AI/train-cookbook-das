@@ -1,4 +1,4 @@
-# DCU Pretrain Cookbook
+# DCU train Cookbook
 
 ## 📖 简介
 
