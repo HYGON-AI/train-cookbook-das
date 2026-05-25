@@ -16,6 +16,7 @@ Qwen2 和 Qwen2.5 是阿里通义千问第二代大语言模型，支持 0.5B ~ 
       <th colspan="5" style="text-align:center" >测试并行策略</th>
       <th rowspan="2">吞吐量(token/s/gpu)</th>
       <th rowspan="2">测试脚本</th>
+      <th rowspan="2">备注</th>
     </tr>
     <tr>
       <th >micro batch size</th>
@@ -91,11 +92,12 @@ Qwen2 和 Qwen2.5 是阿里通义千问第二代大语言模型，支持 0.5B ~ 
     </tr>
     <tr>
       <td>qwen2.5-14B</td>
-      <td>-</td><td>-</td>
-      <td>-</td><td>-</td><td>-</td>
-      <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-      <td>-</td>
+      <td>16</td><td>bf16</td>
+      <td>1</td><td>16</td><td>16384</td>
+      <td>1</td><td>1</td><td>-</td><td>-</td><td>1</td>
+      <td>1212</td>
       <td align="center">-</td>
+      <td>zero3</td>
     </tr>
     <tr>
       <td>qwen2.5-32B</td>

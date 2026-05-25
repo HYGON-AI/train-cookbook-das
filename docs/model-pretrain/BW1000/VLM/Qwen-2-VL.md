@@ -2,7 +2,7 @@
 
 ## 模型简介
 
-Qwen3-VL 是阿里通义千问第二代视觉多模态理解模型，支持 2B ~ 72B 多种参数规模。
+Qwen2/2.5-VL 是阿里通义千问第二代视觉多模态理解模型，支持 2B ~ 72B 多种参数规模。
 
 ## 模型列表
 
@@ -16,6 +16,7 @@ Qwen3-VL 是阿里通义千问第二代视觉多模态理解模型，支持 2B ~
       <th colspan="5" style="text-align:center" >测试并行策略</th>
       <th rowspan="2">吞吐量(token/s/gpu)</th>
       <th rowspan="2">测试脚本</th>
+      <th rowspan="2">备注</th>
     </tr>
     <tr>
       <th >micro batch size</th>
@@ -51,11 +52,12 @@ Qwen3-VL 是阿里通义千问第二代视觉多模态理解模型，支持 2B ~
     </tr>
     <tr>
       <td>qwen2.5-VL-7B</td>
-      <td>-</td><td>-</td>
-      <td>-</td><td>-</td><td>-</td>
+      <td>8</td><td>bf16</td>
+      <td>1</td><td>16</td><td>16384</td>
       <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+      <td>2209</td>
       <td>-</td>
-      <td>-</td>
+      <td>zero3</td>
     </tr>
     <tr>
       <td>qwen2.5-VL-32B</td>
@@ -67,10 +69,10 @@ Qwen3-VL 是阿里通义千问第二代视觉多模态理解模型，支持 2B ~
     </tr>
     <tr>
       <td>qwen2.5-VL-72B</td>
-      <td>-</td><td>-</td>
-      <td>-</td><td>-</td><td>-</td>
-      <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-      <td>-</td>
+      <td>128</td><td>bf16</td>
+      <td>1</td><td>128</td><td>32768</td>
+      <td>8</td><td>4</td><td>-</td><td>-</td><td>4</td>
+      <td>225</td>
       <td>-</td>
     </tr>
   </tbody>
@@ -78,6 +80,6 @@ Qwen3-VL 是阿里通义千问第二代视觉多模态理解模型，支持 2B ~
 
 ## DCU 适配注意
 
-- Qwen3-VL 原生支持 bf16，在 DCU 上运行稳定
+- Qwen2/2.5-VL 原生支持 bf16，在 DCU 上运行稳定
 - MoE 模型的激活参数很小，实际显存需求低于同等 dense 模型
 - VLM模型存在前置的vision model, 对pp1的显存需求更高 
