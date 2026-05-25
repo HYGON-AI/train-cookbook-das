@@ -34,7 +34,7 @@
   <tbody>
     <tr>
       <td rowspan="13">Large Language Models (LLM)</td>
-      <td>DeepSeek v2</td>
+      <td>-</td>
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
@@ -45,7 +45,7 @@
     <tr>
       <td>DeepSeek v3</td>
       <td align="center">-</td>
-      <td align="center">-</td>
+      <td align="center"><a href="docs/model-pretrain/BW1000/LLM/DeepSeek-3.md">✅</a></td>
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
@@ -129,7 +129,7 @@
       <td align="center"><a href="docs/model-pretrain/BW1000/LLM/Qwen-2.md">✅</a></td>
       <td align="center">-</td>
       <td align="center">-</td>
-      <td align="center">-</td>
+      <td align="center"><a href="docs/model-finetune/BW1000/LLM/Qwen-2.md">✅</a></td>
       <td align="center">-</td>
     </tr>
     <tr>
@@ -144,7 +144,7 @@
     <tr>
       <td>Qwen3-Next</td>
       <td align="center">-</td>
-      <td align="center">-</td>
+      <td align="center"><a href="docs/model-pretrain/BW1000/LLM/Qwen3-Next.md">✅</a></td>
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
@@ -185,7 +185,7 @@
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
-      <td align="center">-</td>
+      <td align="center"><a href="docs/model-finetune/BW1100/VLM/Qwen-2-VL.md">✅</a></td>
     </tr>
     <tr>
       <td>Qwen 3-VL</td>
@@ -194,7 +194,7 @@
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
-      <td align="center">-</td>
+      <td align="center"><a href="docs/model-finetune/BW1100/VLM/Qwen-3-VL.md">✅</a></td>
     </tr>
     <tr>
       <td>Qwen 3.5-VL</td>

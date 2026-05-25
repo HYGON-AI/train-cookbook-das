@@ -1,8 +1,8 @@
-# Qwen3
+# Qwen2/2.5
 
 ## 模型简介
 
-Qwen3 是阿里通义千问第三代大语言模型，支持 0.6B ~ 235B 多种参数规模。
+Qwen2 和 Qwen2.5 是阿里通义千问第二代大语言模型，支持 0.5B ~ 72B 多种参数规模。
 
 ## 模型列表
 
@@ -16,6 +16,7 @@ Qwen3 是阿里通义千问第三代大语言模型，支持 0.6B ~ 235B 多种�
       <th colspan="5" style="text-align:center" >测试并行策略</th>
       <th rowspan="2">吞吐量(token/s/gpu)</th>
       <th rowspan="2">测试脚本</th>
+      <th rowspan="2">备注</th>
     </tr>
     <tr>
       <th >micro batch size</th>
@@ -26,7 +27,7 @@ Qwen3 是阿里通义千问第三代大语言模型，支持 0.6B ~ 235B 多种�
   </thead>
   <tbody>
     <tr>
-      <td>qwen3-0.6B</td>
+      <td>qwen2-0.5B</td>
       <td>-</td><td>-</td>
       <td>-</td><td>-</td><td>-</td>
       <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
@@ -34,7 +35,7 @@ Qwen3 是阿里通义千问第三代大语言模型，支持 0.6B ~ 235B 多种�
       <td align="center">-</td>
     </tr>
     <tr>
-      <td>qwen3-1.7B</td>
+      <td>qwen2-1.5B</td>
       <td>-</td><td>-</td>
       <td>-</td><td>-</td><td>-</td>
       <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
@@ -42,7 +43,7 @@ Qwen3 是阿里通义千问第三代大语言模型，支持 0.6B ~ 235B 多种�
       <td align="center">-</td>
     </tr>
     <tr>
-      <td>qwen3-4B</td>
+      <td>qwen2-7B</td>
       <td>-</td><td>-</td>
       <td>-</td><td>-</td><td>-</td>
       <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
@@ -50,15 +51,7 @@ Qwen3 是阿里通义千问第三代大语言模型，支持 0.6B ~ 235B 多种�
       <td align="center">-</td>
     </tr>
     <tr>
-      <td>qwen3-8B</td>
-      <td>8</td><td>BF16</td>
-      <td>1</td><td>32</td><td>32768</td>
-      <td>2</td><td>4</td><td>-</td><td>-</td><td>1</td>
-      <td>1804</td>
-      <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/qwen3">✅</a></td>
-    </tr>
-    <tr>
-      <td>qwen3-14B</td>
+      <td>qwen2-72B</td>
       <td>-</td><td>-</td>
       <td>-</td><td>-</td><td>-</td>
       <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
@@ -66,33 +59,51 @@ Qwen3 是阿里通义千问第三代大语言模型，支持 0.6B ~ 235B 多种�
       <td align="center">-</td>
     </tr>
     <tr>
-      <td>qwen3-32B</td>
-      <td>32</td><td>BF16</td>
-      <td>1</td><td>64</td><td>8192</td>
-      <td>4</td><td>1</td><td>-</td><td>-</td><td>4</td>
-      <td>748</td>
-      <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/qwen3">✅</a></td>
-    </tr>
-    <tr>
-      <td>qwen3-30B-A3B</td>
-      <td>32</td><td>BF16</td>
-      <td>1</td><td>64</td><td>8192</td>
-      <td>1</td><td>1</td><td>1</td><td>8</td><td>4</td>
-      <td>2353</td>
-      <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/qwen3">✅</a></td>
-    </tr>
-    <tr>
-      <td>qwen3-235B-A22B</td>
-      <td>128</td><td>bf16</td>
-      <td>1</td><td>128</td><td>4096</td>
-      <td>4</td><td>2</td><td>1</td><td>8</td><td>16</td>
-      <td>292</td>
+      <td>qwen2.5-0.5B</td>
+      <td>-</td><td>-</td>
+      <td>-</td><td>-</td><td>-</td>
+      <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+      <td>-</td>
       <td align="center">-</td>
+    </tr>
+    <tr>
+      <td>qwen2.5-1.5B</td>
+      <td>-</td><td>-</td>
+      <td>-</td><td>-</td><td>-</td>
+      <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+      <td>-</td>
+      <td align="center">-</td>
+    </tr>
+    <tr>
+      <td>qwen2.5-14B</td>
+      <td>-</td><td>-</td>
+      <td>-</td><td>-</td><td>-</td>
+      <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+      <td>-</td>
+      <td align="center">-</td>
+    </tr>
+    <tr>
+      <td>qwen2.5-32B</td>
+      <td>32</td><td>bf16</td>
+      <td>1</td><td>1024</td><td>2048</td>
+      <td>4</td><td>1</td><td>-</td><td>-</td><td>1</td>
+      <td>34</td>
+      <td align="center">-</td>
+      <td>verl-RL</td>
+    </tr>
+    <tr>
+      <td>qwen2.5-72B</td>
+      <td>16</td><td>BF16</td>
+      <td>1</td><td>16</td><td>16384</td>
+      <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+      <td>262</td>
+      <td align="center">-</td>
+      <td>lora+zero3</td>
     </tr>
   </tbody>
 </table>
 
 ## DCU 适配注意
 
-- Qwen3 原生支持 bf16，在 DCU 上运行稳定
+- Qwen2 和Qwen2.5 原生支持 bf16，在 DCU 上运行稳定
 - MoE 模型的激活参数很小，实际显存需求低于同等 dense 模型
