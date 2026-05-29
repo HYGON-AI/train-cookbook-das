@@ -53,11 +53,11 @@ Qwen2/2.5-VL 是阿里通义千问第二代视觉多模态理解模型，支持 
     <tr>
       <td>qwen2.5-VL-7B</td>
       <td>8</td><td>bf16</td>
-      <td>1</td><td>16</td><td>16384</td>
-      <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-      <td>2209</td>
+      <td>1</td><td>16</td><td>4096</td>
+      <td>2</td><td>1</td><td>-</td><td>-</td><td>2</td>
+      <td>1489</td>
+      <td><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/qwen2">✅</a></td>
       <td>-</td>
-      <td>zero3</td>
     </tr>
     <tr>
       <td>qwen2.5-VL-32B</td>
