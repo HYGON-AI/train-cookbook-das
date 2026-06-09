@@ -46,7 +46,7 @@
       <td>DeepSeek v3</td>
       <td align="center">-</td>
       <td align="center"><a href="docs/model-pretrain/BW1000/LLM/DeepSeek-3.md">✅</a></td>
-      <td align="center">-</td>
+      <td align="center"><a href="docs/model-pretrain/BW1100/LLM/DeepSeek-3.md">✅</a></td>
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
