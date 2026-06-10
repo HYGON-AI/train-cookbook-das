@@ -63,7 +63,7 @@
     <tr>
       <td>Gemma 3</td>
       <td align="center">-</td>
-      <td align="center">-</td>
+      <td align="center"><a href="docs/model-pretrain/BW1000/LLM/Gemma-3.md">✅</a></td>
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
@@ -154,7 +154,7 @@
       <td rowspan="6">Vision Language Models (VLM)</td>
       <td>Gemma 3-VL</td>
       <td align="center">-</td>
-      <td align="center">-</td>
+      <td align="center"><a href="docs/model-pretrain/BW1000/VLM/Gemma-3-VL.md">✅</a></td>
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
