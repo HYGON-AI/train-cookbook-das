@@ -139,7 +139,7 @@
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
-      <td align="center">-</td>
+      <td align="center"><a href="docs/model-finetune/BW1100/LLM/Qwen-3.md">✅</a></td>
     </tr>
     <tr>
       <td>Qwen3-Next</td>
