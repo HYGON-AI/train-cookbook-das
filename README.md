@@ -191,7 +191,7 @@
       <td>Qwen 3-VL</td>
       <td align="center">-</td>
       <td align="center"><a href="docs/model-pretrain/BW1000/VLM/Qwen-3-VL.md">✅</a></td>
-      <td align="center">-</td>
+      <td align="center"><a href="docs/model-pretrain/BW1100/VLM/Qwen-3-VL.md">✅</a></td>
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center"><a href="docs/model-finetune/BW1100/VLM/Qwen-3-VL.md">✅</a></td>
@@ -200,7 +200,7 @@
       <td>Qwen 3.5-VL</td>
       <td align="center">-</td>
       <td align="center"><a href="docs/model-pretrain/BW1000/VLM/Qwen-3.5-VL.md">✅</a></td>
-      <td align="center">-</td>
+      <td align="center"><a href="docs/model-pretrain/BW1100/VLM/Qwen-3.5-VL.md">✅</a></td>
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
