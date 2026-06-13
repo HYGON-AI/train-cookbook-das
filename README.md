@@ -136,7 +136,7 @@
       <td>Qwen 3</td>
       <td align="center">-</td>
       <td align="center"><a href="docs/model-pretrain/BW1000/LLM/Qwen-3.md">✅</a></td>
-      <td align="center">-</td>
+      <td align="center"><a href="docs/model-pretrain/BW1100/LLM/Qwen-3.md">✅</a></td>
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center"><a href="docs/model-finetune/BW1100/LLM/Qwen-3.md">✅</a></td>
