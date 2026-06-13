@@ -1,8 +1,8 @@
-# Qwen3-VL
+# Qwen3.5-VL
 
 ## 模型简介
 
-Qwen3-VL 是阿里通义千问第三代视觉多模态理解模型，支持 2B ~ 235B 多种参数规模。
+Qwen3.5-VL 是阿里通义千问第三代纯视觉多模态理解模型，支持 2B ~ 397B 多种参数规模。
 
 ## 模型列表
 
@@ -16,7 +16,6 @@ Qwen3-VL 是阿里通义千问第三代视觉多模态理解模型，支持 2B ~
       <th colspan="5" style="text-align:center" >测试并行策略</th>
       <th rowspan="2">吞吐量(token/s/gpu)</th>
       <th rowspan="2">测试脚本</th>
-      <th rowspan="2">备注</th>
     </tr>
     <tr>
       <th >micro batch size</th>
@@ -27,49 +26,39 @@ Qwen3-VL 是阿里通义千问第三代视觉多模态理解模型，支持 2B ~
   </thead>
   <tbody>
     <tr>
-      <td>qwen3-VL-2B</td>
-      <td>-</td><td>-</td>
-      <td>-</td><td>-</td><td>-</td>
-      <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>qwen3-VL-4B</td>
-      <td>-</td><td>-</td>
-      <td>-</td><td>-</td><td>-</td>
-      <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>qwen3-VL-8B</td>
+      <td>qwen3.5-VL-9B</td>
       <td>8</td><td>bf16</td>
-      <td>1</td><td>32</td><td>4096</td>
+      <td>1</td><td>32</td><td>2048</td>
       <td>1</td><td>1</td><td>-</td><td>-</td><td>1</td>
-      <td>2874</td>
-      <td><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/qwen3">✅</a></td>
+      <td>1300</td>
+      <td><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/qwen3.5">✅</a></td>
+    </tr>
+    <tr>
+      <td>qwen3.5-VL-27B</td>
+      <td>-</td><td>-</td>
+      <td>-</td><td>-</td><td>-</td>
+      <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+      <td>-</td>
       <td>-</td>
     </tr>
     <tr>
-      <td>qwen3-VL-32B</td>
-      <td>8</td><td>bf16</td>
-      <td>1</td><td>32</td><td>4096</td>
-      <td>2</td><td>1</td><td>-</td><td>-</td><td>2</td>
-      <td>700</td>
-      <td><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/qwen3">✅</a></td>
-    </tr>
-    <tr>
-      <td>qwen3-VL-30B-A3B</td>
-      <td>8</td><td>bf16</td>
-      <td>1</td><td>32</td><td>4096</td>
-      <td>1</td><td>1</td><td>1</td><td>1</td><td>1</td>
-      <td>850</td>
-      <td><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/qwen3">✅</a></td>
+      <td>qwen3.5-VL-35B-A3B</td>
+      <td>-</td><td>-</td>
+      <td>-</td><td>-</td><td>-</td>
+      <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+      <td>-</td>
       <td>-</td>
     </tr>
     <tr>
-      <td>qwen3-VL-235B-A22B</td>
+      <td>qwen3.5-VL-122B-A10B</td>
+      <td>-</td><td>-</td>
+      <td>-</td><td>-</td><td>-</td>
+      <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>qwen3.5-VL-397B-A17B</td>
       <td>-</td><td>-</td>
       <td>-</td><td>-</td><td>-</td>
       <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
@@ -81,6 +70,6 @@ Qwen3-VL 是阿里通义千问第三代视觉多模态理解模型，支持 2B ~
 
 ## DCU 适配注意
 
-- Qwen3-VL 原生支持 bf16，在 DCU 上运行稳定
+- Qwen3.5-VL 原生支持 bf16，在 DCU 上运行稳定
 - MoE 模型的激活参数很小，实际显存需求低于同等 dense 模型
 - VLM模型存在前置的vision model, 对pp1的显存需求更高 
