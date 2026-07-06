@@ -16,6 +16,7 @@ Qwen3.5-VL 是阿里通义千问第三代纯视觉多模态理解模型，支持
       <th colspan="5" style="text-align:center" >测试并行策略</th>
       <th rowspan="2">吞吐量(token/s/gpu)</th>
       <th rowspan="2">测试脚本</th>
+      <th rowspan="2">备注</th>
     </tr>
     <tr>
       <th >micro batch size</th>
