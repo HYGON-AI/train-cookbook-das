@@ -16,6 +16,7 @@ DeepSeek-V3 是一个开源的MoE大语言模型, 有 671B 参数规模。
       <th colspan="5" style="text-align:center" >测试并行策略</th>
       <th rowspan="2">吞吐量(token/s/gpu)</th>
       <th rowspan="2">测试脚本</th>
+      <th rowspan="2">备注</th>
     </tr>
     <tr>
       <th >micro batch size</th>
@@ -40,6 +41,15 @@ DeepSeek-V3 是一个开源的MoE大语言模型, 有 671B 参数规模。
       <td>4</td><td>1</td><td>1</td><td>64</td><td>8</td>
       <td>117</td>
       <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/deepseek_v3">✅</a></td>
+    </tr>
+    <tr>
+      <td>DeekSeek V3-671B(16层)</td>
+      <td>256</td><td>bf16</td>
+      <td>1</td><td>8192</td><td>4096</td>
+      <td>2</td><td>1</td><td>1</td><td>64</td><td>2</td>
+      <td>1664</td>
+      <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/deepseek_v3">✅</a></td>
+      <td>vpp4+deepep+量化通信 109tflops</td>
     </tr>
   </tbody>
 </table>
