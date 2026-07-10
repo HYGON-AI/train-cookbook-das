@@ -17,6 +17,7 @@ Llama2 和 Llama3 是 Meta 开源的大语言模型，均为dense模型，支持
       <th rowspan="2">吞吐量(token/s/gpu)</th>
       <th rowspan="2">测试脚本</th>
       <th rowspan="2">备注</th>
+      <th rowspan="2">NV对比数据</th>
     </tr>
     <tr>
       <th >micro batch size</th>
