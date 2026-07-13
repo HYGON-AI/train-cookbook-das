@@ -16,6 +16,7 @@ Qwen3 是阿里通义千问第三代大语言模型，支持 0.6B ~ 235B 多种�
       <th colspan="5" style="text-align:center" >测试并行策略</th>
       <th rowspan="2">吞吐量(token/s/gpu)</th>
       <th rowspan="2">测试脚本</th>
+      <th rowspan="2">备注</th>
     </tr>
     <tr>
       <th >micro batch size</th>
@@ -32,6 +33,7 @@ Qwen3 是阿里通义千问第三代大语言模型，支持 0.6B ~ 235B 多种�
       <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
       <td>-</td>
       <td align="center">-</td>
+      <td align="center">-</td>
     </tr>
     <tr>
       <td>qwen3-1.7B</td>
@@ -39,6 +41,7 @@ Qwen3 是阿里通义千问第三代大语言模型，支持 0.6B ~ 235B 多种�
       <td>-</td><td>-</td><td>-</td>
       <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
       <td>-</td>
+      <td align="center">-</td>
       <td align="center">-</td>
     </tr>
     <tr>
@@ -48,6 +51,7 @@ Qwen3 是阿里通义千问第三代大语言模型，支持 0.6B ~ 235B 多种�
       <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
       <td>-</td>
       <td align="center">-</td>
+      <td align="center">-</td>
     </tr>
     <tr>
       <td>qwen3-8B</td>
@@ -56,6 +60,16 @@ Qwen3 是阿里通义千问第三代大语言模型，支持 0.6B ~ 235B 多种�
       <td>2</td><td>4</td><td>-</td><td>-</td><td>1</td>
       <td>1804</td>
       <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/qwen3">✅</a></td>
+      <td align="center">-</td>
+    </tr>
+      <tr>
+      <td>qwen3-8B</td>
+      <td>8</td><td>BF16</td>
+      <td>1</td><td>32</td><td>8192</td>
+      <td>2</td><td>1</td><td>-</td><td>-</td><td>1</td>
+      <td>3467</td>
+      <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/qwen3">✅</a></td>
+      <td align="center"><a href="./logs/Qwen3-8B-dcu8-b32-s8192.log">log</a></td>
     </tr>
     <tr>
       <td>qwen3-14B</td>
@@ -63,6 +77,7 @@ Qwen3 是阿里通义千问第三代大语言模型，支持 0.6B ~ 235B 多种�
       <td>-</td><td>-</td><td>-</td>
       <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
       <td>-</td>
+      <td align="center">-</td>
       <td align="center">-</td>
     </tr>
     <tr>
@@ -72,6 +87,7 @@ Qwen3 是阿里通义千问第三代大语言模型，支持 0.6B ~ 235B 多种�
       <td>4</td><td>1</td><td>-</td><td>-</td><td>4</td>
       <td>748</td>
       <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/qwen3">✅</a></td>
+      <td align="center">-</td>
     </tr>
     <tr>
       <td>qwen3-30B-A3B</td>
@@ -80,6 +96,7 @@ Qwen3 是阿里通义千问第三代大语言模型，支持 0.6B ~ 235B 多种�
       <td>1</td><td>1</td><td>1</td><td>8</td><td>4</td>
       <td>2353</td>
       <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/qwen3">✅</a></td>
+      <td align="center">-</td>
     </tr>
     <tr>
       <td>qwen3-235B-A22B</td>
@@ -87,6 +104,7 @@ Qwen3 是阿里通义千问第三代大语言模型，支持 0.6B ~ 235B 多种�
       <td>1</td><td>128</td><td>4096</td>
       <td>4</td><td>2</td><td>1</td><td>8</td><td>16</td>
       <td>292</td>
+      <td align="center">-</td>
       <td align="center">-</td>
     </tr>
   </tbody>
