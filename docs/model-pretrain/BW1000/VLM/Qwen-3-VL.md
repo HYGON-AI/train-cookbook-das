@@ -16,6 +16,7 @@ Qwen3-VL 是阿里通义千问第三代视觉多模态理解模型，支持 2B ~
       <th colspan="5" style="text-align:center" >测试并行策略</th>
       <th rowspan="2">吞吐量(token/s/gpu)</th>
       <th rowspan="2">测试脚本</th>
+      <th rowspan="2">备注</th>
     </tr>
     <tr>
       <th >micro batch size</th>
@@ -56,6 +57,15 @@ Qwen3-VL 是阿里通义千问第三代视觉多模态理解模型，支持 2B ~
       <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
       <td>-</td>
       <td>-</td>
+    </tr>
+    <tr>
+      <td>qwen3-VL-30B-A3B</td>
+      <td>32</td><td>bf16</td>
+      <td>1</td><td>64</td><td>4096</td>
+      <td>1</td><td>1</td><td>1</td><td>8</td><td>2</td>
+      <td>1706</td>
+      <td><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/qwen3">✅</a></td>
+      <td><a href="./logs/Qwen3vl-30BA3B-dcu32-b64-s4096.log">log</a></td>
     </tr>
     <tr>
       <td>qwen3-VL-30B-A3B</td>
