@@ -72,15 +72,6 @@ Qwen3 是阿里通义千问第三代大语言模型，支持 0.6B ~ 235B 多种�
        <td align="center"><a href="./logs/Qwen3-8b-dcu8-b32-seq8192.log">bw1100(3085)</a>:<a href="./logs/Qwen3-8B-h20_8-b32-s8192.log">h20(2445)</a>=126%</td>
     </tr>
     <tr>
-      <td>qwen3-8B</td>
-      <td>8</td><td>BF16</td>
-      <td>1</td><td>32</td><td>4096</td>
-      <td>1</td><td>1</td><td>-</td><td>-</td><td>1</td>
-      <td>-</td>
-      <td align="center">-</td>
-      <td align="center"><a href="./logs/Qwen3-8B-h20_8-b32-s4096.log">h20(2572)</a></td>
-    </tr>
-    <tr>
       <td>qwen3-14B</td>
       <td>8</td><td>BF16</td>
       <td>1</td><td>32</td><td>4096</td>
@@ -115,24 +106,6 @@ Qwen3 是阿里通义千问第三代大语言模型，支持 0.6B ~ 235B 多种�
       <td>783</td>
       <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/qwen3">✅</a></td>
        <td align="center"><a href="./logs/Qwen3-32b-dcu32-b256-seq8192.log">bw1100(783)</a></td>
-    </tr>
-    <tr>
-      <td>qwen3-32B</td>
-      <td>8</td><td>BF16</td>
-      <td>1</td><td>32</td><td>8192</td>
-      <td>4</td><td>1</td><td>-</td><td>-</td><td>2</td>
-      <td>-</td>
-      <td align="center">-</td>
-       <td align="center"><a href="./logs/Qwen3-32B-h20_8-b32-s8192-tp4pp2.log">h20(552)</a></td>
-    </tr>
-    <tr>
-      <td>qwen3-32B</td>
-      <td>8</td><td>BF16</td>
-      <td>1</td><td>32</td><td>8192</td>
-      <td>2</td><td>2</td><td>-</td><td>-</td><td>2</td>
-      <td>-</td>
-      <td align="center">-</td>
-       <td align="center"><a href="./logs/Qwen3-32B-h20_8-b32-s8192-tp2cp2pp2.log">h20(548)</a></td>
     </tr>
     <tr>
       <td>qwen3-30B-A3B</td>
