@@ -16,6 +16,7 @@ Llama2 和 Llama3 是 Meta 开源的大语言模型，均为dense模型，支持
       <th colspan="5" style="text-align:center" >测试并行策略</th>
       <th rowspan="2">吞吐量(token/s/gpu)</th>
       <th rowspan="2">测试脚本</th>
+      <th rowspan="2">备注</th>
     </tr>
     <tr>
       <th >micro batch size</th>
@@ -48,6 +49,7 @@ Llama2 和 Llama3 是 Meta 开源的大语言模型，均为dense模型，支持
       <td>4</td><td>1</td><td>-</td><td>-</td><td>8</td>
       <td>510</td>
       <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/llama2">✅</a></td>
+      <td align="center"><a href="./logs/Llama2-70B-dcu64-b1024-s4096.log">log</a></td>
     </tr>
     <tr>
       <td>llama3-8B</td>
