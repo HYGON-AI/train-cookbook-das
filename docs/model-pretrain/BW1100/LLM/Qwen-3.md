@@ -94,9 +94,9 @@ Qwen3 是阿里通义千问第三代大语言模型，支持 0.6B ~ 235B 多种�
       <td>32</td><td>BF16</td>
       <td>1</td><td>64</td><td>8192</td>
       <td>2</td><td>1</td><td>-</td><td>-</td><td>2</td>
-      <td>2359</td>
+      <td>709</td>
       <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/qwen3">✅</a></td>
-       <td align="center"><a href="./logs/Qwen3-32b-dcu32-b64-seq8192.log">bw1100(2359)</a></td>
+       <td align="center"><a href="./logs/Qwen3-32b-dcu32-b64-seq8192.log">bw1100(709)</a></td>
     </tr>
     <tr>
       <td>qwen3-32B</td>
