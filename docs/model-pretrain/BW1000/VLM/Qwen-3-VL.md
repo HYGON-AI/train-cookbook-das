@@ -68,14 +68,6 @@ Qwen3-VL 是阿里通义千问第三代视觉多模态理解模型，支持 2B ~
       <td><a href="./logs/Qwen3vl-30BA3B-dcu32-b64-s4096.log">log</a></td>
     </tr>
     <tr>
-      <td>qwen3-VL-30B-A3B</td>
-      <td>32</td><td>bf16</td>
-      <td>1</td><td>256</td><td>4096</td>
-      <td>1</td><td>1</td><td>1</td><td>8</td><td>1</td>
-      <td>3150</td>
-      <td>-</td>
-    </tr>
-    <tr>
       <td>qwen3-VL-235B-A22B</td>
       <td>-</td><td>-</td>
       <td>-</td><td>-</td><td>-</td>
