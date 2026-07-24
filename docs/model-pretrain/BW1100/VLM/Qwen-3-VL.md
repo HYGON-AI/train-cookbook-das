@@ -47,26 +47,27 @@ Qwen3-VL 是阿里通义千问第三代视觉多模态理解模型，支持 2B ~
       <td>8</td><td>bf16</td>
       <td>1</td><td>32</td><td>4096</td>
       <td>1</td><td>1</td><td>-</td><td>-</td><td>1</td>
-      <td>2874</td>
+      <td>2798</td>
       <td><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/qwen3">✅</a></td>
-      <td>-</td>
+      <td align="center"><a href="../logs/Qwen3vl-8B-dcu8-b32-s4096.log">log</a></td>
     </tr>
     <tr>
       <td>qwen3-VL-32B</td>
       <td>8</td><td>bf16</td>
       <td>1</td><td>32</td><td>4096</td>
       <td>2</td><td>1</td><td>-</td><td>-</td><td>2</td>
-      <td>700</td>
+      <td>712</td>
       <td><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/qwen3">✅</a></td>
+      <td align="center"><a href="../logs/Qwen3vl-32B-dcu8-b32-s4096.log">log</a></td>
     </tr>
     <tr>
       <td>qwen3-VL-30B-A3B</td>
       <td>8</td><td>bf16</td>
       <td>1</td><td>32</td><td>4096</td>
-      <td>1</td><td>1</td><td>1</td><td>1</td><td>1</td>
-      <td>850</td>
+      <td>1</td><td>1</td><td>1</td><td>8</td><td>1</td>
+      <td>1555</td>
       <td><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/qwen3">✅</a></td>
-      <td>-</td>
+      <td align="center"><a href="../logs/Qwen3vl-30B-A3B-dcu8-b32-s4096.log">log</a></td>
     </tr>
     <tr>
       <td>qwen3-VL-235B-A22B</td>
