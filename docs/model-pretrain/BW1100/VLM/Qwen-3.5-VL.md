@@ -16,6 +16,7 @@ Qwen3.5-VL 是阿里通义千问第三代纯视觉多模态理解模型，支持
       <th colspan="5" style="text-align:center" >测试并行策略</th>
       <th rowspan="2">吞吐量(token/s/gpu)</th>
       <th rowspan="2">测试脚本</th>
+      <th rowspan="2">备注</th>
     </tr>
     <tr>
       <th >micro batch size</th>
@@ -28,26 +29,29 @@ Qwen3.5-VL 是阿里通义千问第三代纯视觉多模态理解模型，支持
     <tr>
       <td>qwen3.5-VL-9B</td>
       <td>8</td><td>bf16</td>
-      <td>1</td><td>32</td><td>2048</td>
+      <td>1</td><td>32</td><td>4096</td>
       <td>1</td><td>1</td><td>-</td><td>-</td><td>1</td>
-      <td>1300</td>
+      <td>1648</td>
       <td><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/qwen3.5">✅</a></td>
+      <td align="center"><a href="./logs/Qwen3.5vl-9B-dcu8-b32-s4096.log">log</a></td>
     </tr>
     <tr>
       <td>qwen3.5-VL-27B</td>
-      <td>-</td><td>-</td>
-      <td>-</td><td>-</td><td>-</td>
-      <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-      <td>-</td>
-      <td>-</td>
+      <td>8</td><td>bf16</td>
+      <td>1</td><td>32</td><td>4096</td>
+      <td>2</td><td>1</td><td>-</td><td>-</td><td>2</td>
+      <td>522</td>
+      <td><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/qwen3.5">✅</a></td>
+      <td align="center"><a href="./logs/Qwen3.5vl-27B-dcu8-b32-s4096.log">log</a></td>
     </tr>
     <tr>
       <td>qwen3.5-VL-35B-A3B</td>
-      <td>-</td><td>-</td>
-      <td>-</td><td>-</td><td>-</td>
-      <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-      <td>-</td>
-      <td>-</td>
+     <td>8</td><td>bf16</td>
+      <td>1</td><td>32</td><td>4096</td>
+      <td>1</td><td>1</td><td>1</td><td>8</td><td>1</td>
+      <td>1493</td>
+      <td><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/qwen3.5">✅</a></td>
+      <td align="center"><a href="./logs/Qwen3.5vl-35B-dcu8-b32-s4096.log">log</a></td>
     </tr>
     <tr>
       <td>qwen3.5-VL-122B-A10B</td>
@@ -56,12 +60,14 @@ Qwen3.5-VL 是阿里通义千问第三代纯视觉多模态理解模型，支持
       <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>qwen3.5-VL-397B-A17B</td>
       <td>-</td><td>-</td>
       <td>-</td><td>-</td><td>-</td>
       <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
