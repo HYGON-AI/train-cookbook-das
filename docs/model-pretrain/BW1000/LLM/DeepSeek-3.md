@@ -4,53 +4,30 @@
 
 DeepSeek-V3 是一个开源的MoE大语言模型, 有 671B 参数规模。
 
+## 推荐镜像
+docker pull harbor.sourcefind.cn:5443/dcu/admin/base/custom:pytorch2.9.0-ubuntu22.04-dtk26.04-py3.10_te2.10
+
 ## 模型列表
 
 <table>
   <thead>
     <tr>
       <th rowspan="2">模型</th>
-      <th rowspan="2">测试卡数</th>
       <th rowspan="2">精度</th>
-      <th colspan="3" style="text-align:center">测试参数</th>
-      <th colspan="5" style="text-align:center" >测试并行策略</th>
-      <th rowspan="2">吞吐量(token/s/gpu)</th>
-      <th rowspan="2">测试脚本</th>
-      <th rowspan="2">备注</th>
-    </tr>
-    <tr>
-      <th >micro batch size</th>
-      <th >global batch size</th>
-      <th >seq length</th>
-      <th >TP</th><th >CP</th><th >ETP</th><th >EP</th><th >PP</th>
+      <th rowspan="2">torch版本</th>
+      <th rowspan="2">TE版本</th>
+      <th rowspan="2">推荐卡数</th>
+      <th rowspan="2">序列长度</th>
+      <th rowspan="2">示例脚本</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>DeekSeek V3-671B</td>
-      <td>1024</td><td>bf16</td>
-      <td>1</td><td>2048</td><td>4096</td>
-      <td>4</td><td>1</td><td>1</td><td>64</td><td>8</td>
-      <td>210</td>
-      <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/deepseek_v3">✅</a></td>
-      <td align="center"><a href="./logs/Deepseekv3-dcu1024-b2048-s4096.log">log</a></td>
-    </tr>
-    <tr>
-      <td>DeekSeek V3-671B</td>
-      <td>2048</td><td>bf16</td>
-      <td>1</td><td>2048</td><td>4096</td>
-      <td>4</td><td>1</td><td>1</td><td>64</td><td>8</td>
-      <td>117</td>
-      <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/deepseek_v3">✅</a></td>
-    </tr>
-    <tr>
-      <td>DeekSeek V3-671B(16层)</td>
-      <td>256</td><td>bf16</td>
-      <td>1</td><td>8192</td><td>4096</td>
-      <td>2</td><td>1</td><td>1</td><td>64</td><td>2</td>
-      <td>1664</td>
-      <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/deepseek_v3">✅</a></td>
-      <td>vpp4+deepep+量化通信 109tflops</td>
+      <td><a href="https://www.modelscope.cn/models/deepseek-ai/DeepSeek-V3">DeekSeek V3-671B</a></td>
+      <td>BF16</td><td>2.9</td><td>2.10</td>
+      <td>1024</td>
+      <td><=4096</td>
+      <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.18.2/examples/deepseek_v3">✅</a></td>
     </tr>
   </tbody>
 </table>

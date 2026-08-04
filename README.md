@@ -19,8 +19,8 @@
     <tr>
       <th rowspan="2">类型</th>
       <th rowspan="2">模型</th>
-      <th colspan="3" style="text-align:center">预训练</th>
-      <th colspan="3" style="text-align:center">微调</th>
+      <th colspan="3" style="text-align:center">PreTrain</th>
+      <th colspan="3" style="text-align:center">RL/DPO</th>
     </tr>
     <tr>
       <th align="center">K100_AI</th>
@@ -129,7 +129,7 @@
       <td align="center"><a href="docs/model-pretrain/BW1000/LLM/Qwen-2.md">✅</a></td>
       <td align="center">-</td>
       <td align="center">-</td>
-      <td align="center"><a href="docs/model-finetune/BW1000/LLM/Qwen-2.md">✅</a></td>
+      <td align="center">-</td>
       <td align="center">-</td>
     </tr>
     <tr>
@@ -139,7 +139,7 @@
       <td align="center"><a href="docs/model-pretrain/BW1100/LLM/Qwen-3.md">✅</a></td>
       <td align="center">-</td>
       <td align="center">-</td>
-      <td align="center"><a href="docs/model-finetune/BW1100/LLM/Qwen-3.md">✅</a></td>
+      <td align="center">-</td>
     </tr>
     <tr>
       <td>Qwen3-Next</td>
@@ -185,7 +185,7 @@
       <td align="center"><a href="docs/model-pretrain/BW1100/VLM/Qwen-2-VL.md">✅</a></td>
       <td align="center">-</td>
       <td align="center">-</td>
-      <td align="center"><a href="docs/model-finetune/BW1100/VLM/Qwen-2-VL.md">✅</a></td>
+      <td align="center">-</td>
     </tr>
     <tr>
       <td>Qwen 3-VL</td>
@@ -194,7 +194,7 @@
       <td align="center"><a href="docs/model-pretrain/BW1100/VLM/Qwen-3-VL.md">✅</a></td>
       <td align="center">-</td>
       <td align="center">-</td>
-      <td align="center"><a href="docs/model-finetune/BW1100/VLM/Qwen-3-VL.md">✅</a></td>
+      <td align="center">-</td>
     </tr>
     <tr>
       <td>Qwen 3.5-VL</td>
