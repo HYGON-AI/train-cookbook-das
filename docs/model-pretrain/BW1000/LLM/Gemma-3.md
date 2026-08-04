@@ -4,42 +4,30 @@
 
 Gemma-3 是google开源的大语言模型, 语言模型有 1B 参数。
 
+## 推荐镜像
+docker pull harbor.sourcefind.cn:5443/dcu/admin/base/custom:pytorch2.9.0-ubuntu22.04-dtk26.04-py3.10_te2.10
+
 ## 模型列表
 
 <table>
   <thead>
     <tr>
       <th rowspan="2">模型</th>
-      <th rowspan="2">测试卡数</th>
       <th rowspan="2">精度</th>
-      <th colspan="3" style="text-align:center">测试参数</th>
-      <th colspan="5" style="text-align:center" >测试并行策略</th>
-      <th rowspan="2">吞吐量(token/s/gpu)</th>
-      <th rowspan="2">测试脚本</th>
-    </tr>
-    <tr>
-      <th >micro batch size</th>
-      <th >global batch size</th>
-      <th >seq length</th>
-      <th >TP</th><th >CP</th><th >ETP</th><th >EP</th><th >PP</th>
+      <th rowspan="2">torch版本</th>
+      <th rowspan="2">TE版本</th>
+      <th rowspan="2">推荐卡数</th>
+      <th rowspan="2">序列长度</th>
+      <th rowspan="2">示例脚本</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Gemma 3-1B</td>
-      <td>8</td><td>bf16</td>
-      <td>1</td><td>32</td><td>4096</td>
-      <td>1</td><td>1</td><td>-</td><td>-</td><td>1</td>
-      <td>10549</td>
-      <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/gemma3">✅</a></td>
-    </tr>
-    <tr>
-      <td>-</td>
-      <td>-</td><td>-</td>
-      <td>-</td><td>-</td><td>-</td>
-      <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-      <td>-</td>
-      <td align="center">-</td>
+      <td><a href="https://www.modelscope.cn/models/LLM-Research/gemma-3-1b-it">Gemma 3-1B</a></td>
+      <td>BF16</td><td>2.9</td><td>2.10</td>
+      <td>8</td>
+      <td><=4096</td>
+    <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.18.2/examples/gemma3">✅</a></td>
     </tr>
   </tbody>
 </table>
