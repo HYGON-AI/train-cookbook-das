@@ -4,36 +4,30 @@
 
 Qwen3-Next 是阿里通义千问第三代视觉多模态理解模型。
 
+## 推荐镜像
+docker pull harbor.sourcefind.cn:5443/dcu/admin/base/custom:pytorch2.9.0-ubuntu22.04-dtk26.04-py3.10_te2.10
+
 ## 模型列表
 
 <table>
   <thead>
     <tr>
       <th rowspan="2">模型</th>
-      <th rowspan="2">测试卡数</th>
       <th rowspan="2">精度</th>
-      <th colspan="3" style="text-align:center">测试参数</th>
-      <th colspan="5" style="text-align:center" >测试并行策略</th>
-      <th rowspan="2">吞吐量(token/s/gpu)/迭代耗时(s)</th>
-      <th rowspan="2">测试脚本</th>
-      <th rowspan="2">备注</th>
-    </tr>
-    <tr>
-      <th >micro batch size</th>
-      <th >global batch size</th>
-      <th >seq length</th>
-      <th >TP</th><th >CP</th><th >ETP</th><th >EP</th><th >PP</th>
+      <th rowspan="2">torch版本</th>
+      <th rowspan="2">TE版本</th>
+      <th rowspan="2">推荐卡数</th>
+      <th rowspan="2">序列长度</th>
+      <th rowspan="2">示例脚本</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>qwen3-Next</td>
-      <td>32</td><td>bf16</td>
-      <td>1</td><td>256</td><td>4096</td>
-      <td>2</td><td>1</td><td>1</td><td>8</td><td>4</td>
-      <td>75.441s</td>
+      <td>Qwen3-Next</td>
+      <td>-</td><td>-</td><td>-</td>
       <td>-</td>
-      <td>16层</td>
+      <td>-</td>
+      <td align="center">正在适配</td>
     </tr>
   </tbody>
 </table>

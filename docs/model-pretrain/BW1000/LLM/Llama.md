@@ -4,76 +4,65 @@
 
 Llama2 和 Llama3 是 Meta 开源的大语言模型，均为dense模型，支持 7B ~ 405B 多种参数规模。
 
+## 推荐镜像
+docker pull harbor.sourcefind.cn:5443/dcu/admin/base/custom:pytorch2.9.0-ubuntu22.04-dtk26.04-py3.10_te2.10
+
 ## 模型列表
 
 <table>
   <thead>
     <tr>
       <th rowspan="2">模型</th>
-      <th rowspan="2">测试卡数</th>
       <th rowspan="2">精度</th>
-      <th colspan="3" style="text-align:center">测试参数</th>
-      <th colspan="5" style="text-align:center" >测试并行策略</th>
-      <th rowspan="2">吞吐量(token/s/gpu)</th>
-      <th rowspan="2">测试脚本</th>
-      <th rowspan="2">备注</th>
-    </tr>
-    <tr>
-      <th >micro batch size</th>
-      <th >global batch size</th>
-      <th >seq length</th>
-      <th >TP</th><th >CP</th><th >ETP</th><th >EP</th><th >PP</th>
+      <th rowspan="2">torch版本</th>
+      <th rowspan="2">TE版本</th>
+      <th rowspan="2">推荐卡数</th>
+      <th rowspan="2">序列长度</th>
+      <th rowspan="2">示例脚本</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>llama2-7B</td>
-      <td>8</td><td>BF16</td>
-      <td>1</td><td>256</td><td>4096</td>
-      <td>1</td><td>1</td><td>-</td><td>-</td><td>2</td>
-      <td>4783</td>
-      <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/llama2">✅</a></td>
+      <td><a href="https://www.modelscope.cn/models/LLM-Research/llama-2-7b">llama2-7B</a></td>
+      <td>BF16</td><td>2.9</td><td>2.10</td>
+      <td>8</td>
+      <td><=4096</td>
+      <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.18.2/examples/llama2">✅</a></td>
     </tr>
     <tr>
-      <td>llama2-13B</td>
-      <td>8</td><td>BF16</td>
-      <td>1</td><td>256</td><td>4096</td>
-      <td>2</td><td>1</td><td>-</td><td>-</td><td>2</td>
-      <td>2402</td>
-      <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/llama2">✅</a></td>
+      <td><a href="https://www.modelscope.cn/models/shakechen/Llama-2-13b">llama2-13B</a></td>
+      <td>BF16</td><td>2.9</td><td>2.10</td>
+      <td>8</td>
+      <td><=4096</td>
+      <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.18.2/examples/llama2">✅</a></td>
     </tr>
     <tr>
-      <td>llama2-70B</td>
-      <td>64</td><td>BF16</td>
-      <td>1</td><td>256</td><td>4096</td>
-      <td>4</td><td>1</td><td>-</td><td>-</td><td>8</td>
-      <td>510</td>
-      <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/llama2">✅</a></td>
-      <td align="center"><a href="./logs/Llama2-70B-dcu64-b1024-s4096.log">log</a></td>
+      <td><a href="https://huggingface.co/meta-llama/Llama-2-70b">llama2-70B</a></td>
+      <td>BF16</td><td>2.9</td><td>2.10</td>
+      <td>64</td>
+      <td><=4096</td>
+      <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.18.2/examples/llama2">✅</a></td>
     </tr>
     <tr>
-      <td>llama3-8B</td>
-      <td>8</td><td>BF16</td>
-      <td>1</td><td>64</td><td>4096</td>
-      <td>2</td><td>1</td><td>-</td><td>-</td><td>1</td>
-      <td>4102</td>
-      <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/llama3">✅</a></td>
+      <td><a href="https://www.modelscope.cn/models/LLM-Research/Meta-Llama-3-8B">llama3-8B</a></td>
+      <td>BF16</td><td>2.9</td><td>2.10</td>
+      <td>8</td>
+      <td><=4096</td>
+      <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.18.2/examples/llama3">✅</a></td>
     </tr>
     <tr>
-      <td>llama3-70B</td>
-      <td>64</td><td>BF16</td>
-      <td>1</td><td>512</td><td>4096</td>
-      <td>4</td><td>1</td><td>-</td><td>-</td><td>8</td>
-      <td>423</td>
-      <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/llama3">✅</a></td>
+      <td><a href="https://www.modelscope.cn/models/LLM-Research/Meta-Llama-3-70B">llama3-70B</a></td>
+      <td>BF16</td><td>2.9</td><td>2.10</td>
+      <td>64</td>
+      <td><=4096</td>
+      <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.18.2/examples/llama3">✅</a></td>
     </tr>
-    <tr>
-      <td>llama3-405B</td>
-      <td>512</td><td>BF16</td>
-      <td>1</td><td>512</td><td>4096</td>
-      <td>8</td><td>2</td><td>-</td><td>-</td><td>16</td>
-      <td>69</td>
-      <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.17.0/examples/llama3">✅</a></td>
+        <tr>
+      <td><a href="https://www.modelscope.cn/models/LLM-Research/Meta-Llama-3.1-405B">llama3-405B</a></td>
+      <td>BF16</td><td>2.9</td><td>2.10</td>
+      <td>512</td>
+      <td><=4096</td>
+      <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.18.2/examples/llama3">✅</a></td>
     </tr>
   </tbody>
 </table>
