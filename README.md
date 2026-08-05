@@ -1,8 +1,8 @@
-# DCU train Cookbook
+# HCU train Cookbook
 
 ## 📖 简介
 
-本仓库整理了在 DCU 硬件上部署、调优和运行 AI 模型的经验与最佳实践，涵盖：
+本仓库整理了在 HCU 硬件上部署、调优和运行 AI 模型的经验与最佳实践，涵盖：
 
 - **环境搭建** — DTK 工具链、驱动安装、Python 环境配置
 - **数据处理** — LLM、VLM数据处理脚本
@@ -10,44 +10,31 @@
 - **性能优化** — 显存优化、算子调优、量化、多卡并行
 - **框架适配** — Megatron-LM、Megatron-Bridge、Transformers、Transformer-Engine 等
 - **故障排查** — 常见问题、错误码、FAQ
-- **性能基准** — 各模型在 DCU 上的实测数据
+- **性能基准** — 各模型在 HCU 上的实测数据
 
 ## 📋 模型列表(绿色对勾可点击)
-
-<table>
+✅ 已验证 &nbsp;|&nbsp; 🚧 开发中 &nbsp;|&nbsp; `-` 暂未验证
+<table align="center">
   <thead>
     <tr>
       <th rowspan="2">类型</th>
       <th rowspan="2">模型</th>
-      <th colspan="3" style="text-align:center">PreTrain</th>
-      <th colspan="3" style="text-align:center">RL/DPO</th>
+      <th colspan="2" style="text-align:center">PreTrain/SFT</th>
+      <th colspan="2" style="text-align:center">RL/DPO</th>
     </tr>
     <tr>
-      <th align="center">K100_AI</th>
       <th align="center">BW1000</th>
       <th align="center">BW1100</th>
-      <th align="center">K100_AI</th>
       <th align="center">BW1000</th>
       <th align="center">BW1100</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan="13">Large Language Models (LLM)</td>
-      <td>-</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
-    </tr>
-    <tr>
+      <td rowspan="14">Large Language Models (LLM)</td>
       <td>DeepSeek v3</td>
-      <td align="center">-</td>
-      <td align="center"><a href="docs/model-pretrain/BW1000/LLM/DeepSeek-3.md">✅</a></td>
-      <td align="center"><a href="docs/model-pretrain/BW1100/LLM/DeepSeek-3.md">✅</a></td>
-      <td align="center">-</td>
+      <td align="center"><a href="docs/model-foundation/BW1000/LLM/DeepSeek-3.md">✅</a></td>
+      <td align="center"><a href="docs/model-foundation/BW1100/LLM/DeepSeek-3.md">✅</a></td>
       <td align="center">-</td>
       <td align="center">-</td>
     </tr>
@@ -57,22 +44,16 @@
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
     </tr>
     <tr>
       <td>Gemma 3</td>
-      <td align="center">-</td>
-      <td align="center"><a href="docs/model-pretrain/BW1000/LLM/Gemma-3.md">✅</a></td>
-      <td align="center">-</td>
-      <td align="center">-</td>
+      <td align="center"><a href="docs/model-foundation/BW1000/LLM/Gemma-3.md">✅</a></td>
+      <td align="center">🚧</td>
       <td align="center">-</td>
       <td align="center">-</td>
     </tr>
     <tr>
       <td>Gemma 4</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
@@ -84,13 +65,23 @@
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
+    </tr>
+    <tr>
+      <td>GLM-5</td>
+      <td align="center">🚧</td>
+      <td align="center">🚧</td>
+      <td align="center">-</td>
+      <td align="center">-</td>
+    </tr>
+    <tr>
+      <td>GPT-3</td>
+      <td align="center">🚧</td>
+      <td align="center">🚧</td>
       <td align="center">-</td>
       <td align="center">-</td>
     </tr>
     <tr>
       <td>GPT-oss</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
@@ -102,68 +93,54 @@
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
     </tr>
     <tr>
       <td>Llama 2/3</td>
-      <td align="center">-</td>
-      <td align="center"><a href="docs/model-pretrain/BW1000/LLM/Llama.md">✅</a></td>
-      <td align="center"><a href="docs/model-pretrain/BW1100/LLM/Llama.md">✅</a></td>
-      <td align="center">-</td>
+      <td align="center"><a href="docs/model-foundation/BW1000/LLM/Llama.md">✅</a></td>
+      <td align="center"><a href="docs/model-foundation/BW1100/LLM/Llama.md">✅</a></td>
       <td align="center">-</td>
       <td align="center">-</td>
     </tr>
     <tr>
       <td>Qwen 1.5</td>
-      <td align="center">-</td>
-      <td align="center"><a href="docs/model-pretrain/BW1000/LLM/Qwen-1.5.md">✅</a></td>
-      <td align="center">-</td>
-      <td align="center">-</td>
+      <td align="center"><a href="docs/model-foundation/BW1000/LLM/Qwen-1.5.md">✅</a></td>
+      <td align="center">🚧</td>
       <td align="center">-</td>
       <td align="center">-</td>
     </tr>
     <tr>
       <td>Qwen 2/2.5</td>
-      <td align="center">-</td>
-      <td align="center"><a href="docs/model-pretrain/BW1000/LLM/Qwen-2.md">✅</a></td>
-      <td align="center">-</td>
-      <td align="center">-</td>
+      <td align="center"><a href="docs/model-foundation/BW1000/LLM/Qwen-2.md">✅</a></td>
+      <td align="center">🚧</td>
       <td align="center">-</td>
       <td align="center">-</td>
     </tr>
     <tr>
       <td>Qwen 3</td>
-      <td align="center">-</td>
-      <td align="center"><a href="docs/model-pretrain/BW1000/LLM/Qwen-3.md">✅</a></td>
-      <td align="center"><a href="docs/model-pretrain/BW1100/LLM/Qwen-3.md">✅</a></td>
-      <td align="center">-</td>
+      <td align="center"><a href="docs/model-foundation/BW1000/LLM/Qwen-3.md">✅</a></td>
+      <td align="center"><a href="docs/model-foundation/BW1100/LLM/Qwen-3.md">✅</a></td>
       <td align="center">-</td>
       <td align="center">-</td>
     </tr>
     <tr>
       <td>Qwen3-Next</td>
-      <td align="center">-</td>
-      <td align="center"><a href="docs/model-pretrain/BW1000/LLM/Qwen3-Next.md">✅</a></td>
-      <td align="center">-</td>
-      <td align="center">-</td>
+      <td align="center"><a href="docs/model-foundation/BW1000/LLM/Qwen3-Next.md">✅</a></td>
+      <td align="center">🚧</td>
       <td align="center">-</td>
       <td align="center">-</td>
     </tr>
+  </tbody>
+  <tbody>
     <tr>
       <td rowspan="6">Vision Language Models (VLM)</td>
       <td>Gemma 3-VL</td>
-      <td align="center">-</td>
-      <td align="center"><a href="docs/model-pretrain/BW1000/VLM/Gemma-3-VL.md">✅</a></td>
-      <td align="center">-</td>
-      <td align="center">-</td>
+      <td align="center"><a href="docs/model-foundation/BW1000/VLM/Gemma-3-VL.md">✅</a></td>
+      <td align="center">🚧</td>
       <td align="center">-</td>
       <td align="center">-</td>
     </tr>
     <tr>
       <td>Gemma 4-VL</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
@@ -175,33 +152,25 @@
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
     </tr>
     <tr>
       <td>Qwen 2/2.5-VL</td>
-      <td align="center">-</td>
-      <td align="center"><a href="docs/model-pretrain/BW1000/VLM/Qwen-2-VL.md">✅</a></td>
-      <td align="center"><a href="docs/model-pretrain/BW1100/VLM/Qwen-2-VL.md">✅</a></td>
-      <td align="center">-</td>
+      <td align="center"><a href="docs/model-foundation/BW1000/VLM/Qwen-2-VL.md">✅</a></td>
+      <td align="center"><a href="docs/model-foundation/BW1100/VLM/Qwen-2-VL.md">✅</a></td>
       <td align="center">-</td>
       <td align="center">-</td>
     </tr>
     <tr>
       <td>Qwen 3-VL</td>
-      <td align="center">-</td>
-      <td align="center"><a href="docs/model-pretrain/BW1000/VLM/Qwen-3-VL.md">✅</a></td>
-      <td align="center"><a href="docs/model-pretrain/BW1100/VLM/Qwen-3-VL.md">✅</a></td>
-      <td align="center">-</td>
+      <td align="center"><a href="docs/model-foundation/BW1000/VLM/Qwen-3-VL.md">✅</a></td>
+      <td align="center"><a href="docs/model-foundation/BW1100/VLM/Qwen-3-VL.md">✅</a></td>
       <td align="center">-</td>
       <td align="center">-</td>
     </tr>
     <tr>
       <td>Qwen 3.5-VL</td>
-      <td align="center">-</td>
-      <td align="center"><a href="docs/model-pretrain/BW1000/VLM/Qwen-3.5-VL.md">✅</a></td>
-      <td align="center"><a href="docs/model-pretrain/BW1100/VLM/Qwen-3.5-VL.md">✅</a></td>
-      <td align="center">-</td>
+      <td align="center"><a href="docs/model-foundation/BW1000/VLM/Qwen-3.5-VL.md">✅</a></td>
+      <td align="center"><a href="docs/model-foundation/BW1100/VLM/Qwen-3.5-VL.md">✅</a></td>
       <td align="center">-</td>
       <td align="center">-</td>
     </tr>
