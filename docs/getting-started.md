@@ -4,8 +4,7 @@
 
 ## 前置条件
 
-- 已安装 HCU 驱动和 DTK（参考 [environment-setup.md](environment-setup.md)）
-- Python 3.10+ 环境
+- 已安装 HCU 驱动
 - 至少8张 HCU（64GB 显存推荐）
 
 ## 大语言模型 (LLM)
@@ -41,7 +40,7 @@
     ```
 3. 拉取hcu-megatron源码
     ```bash
-    git clone http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron.git
+    git clone https://developer.sourcefind.cn/codes/OpenDAS/dcu_megatron.git
     cd dcu_megatron
     git checkout origin/core_v0.18.2
     git submodule update --init --recursive
@@ -79,6 +78,7 @@
     vim ../../requirements/env.sh
         # 设置socket等信息
         export GLOO_SOCKET_IFNAME=实际的网卡
+        export NCCL_SOCKET_IFNAME=实际的网卡
 
     # 完善启动脚本中的配置信息
     vim run_qwen.sh
@@ -143,6 +143,7 @@
     vim ../../requirements/env.sh
         # 设置socket等信息
         export GLOO_SOCKET_IFNAME=实际的网卡
+        export NCCL_SOCKET_IFNAME=实际的网卡
 
     # 完善启动脚本中的配置信息
     vim run_qwen.sh
@@ -227,7 +228,7 @@
     ```
 3. 拉取hcu-megatron源码
     ```bash
-    git clone http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron.git
+    git clone https://developer.sourcefind.cn/codes/OpenDAS/dcu_megatron.git
     cd dcu_megatron
     git checkout origin/core_v0.18.2
     git submodule update --init --recursive
@@ -260,6 +261,7 @@
     vim ../../requirements/env.sh
         # 设置socket等信息
         export GLOO_SOCKET_IFNAME=实际的网卡
+        export NCCL_SOCKET_IFNAME=实际的网卡
 
     # 完善vlm-config.json中的配置信息, 将path修改为实际的train.jsonl路径
     vim vlm-config.json
@@ -306,4 +308,4 @@
 
 - [模型部署文档](model-deployment/)
 - [多模态方案概览](multimodal/overview.md)
-- [性能调优指南](optimization/performance-tuning.md)
+- [性能调优指南](optimization/readme.md)

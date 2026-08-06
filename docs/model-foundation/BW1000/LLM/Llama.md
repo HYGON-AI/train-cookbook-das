@@ -67,7 +67,7 @@ docker pull harbor.sourcefind.cn:5443/dcu/admin/base/custom:pytorch2.9.0-ubuntu2
   </tbody>
 </table>
 
-## DCU 适配注意
+## HCU 适配注意
 
-- Llama2 和 Llama3 原生支持 bf16，在 DCU 上运行稳定
+- Llama2 和 Llama3 原生支持 bf16，在 HCU 上运行稳定
 - Llama2 和 Llama3 均为dense模型，没有moe结构
