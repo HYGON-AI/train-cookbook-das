@@ -32,7 +32,7 @@ docker pull harbor.sourcefind.cn:5443/dcu/admin/base/custom:pytorch2.9.0-ubuntu2
   </tbody>
 </table>
 
-## DCU 适配注意
+## HCU 适配注意
 
-- Gemma-3 原生支持 bf16，在 DCU 上运行稳定
+- Gemma-3 原生支持 bf16，在 HCU 上运行稳定
 - Gemma-3 只有1B是语言模型, 其他版本都是多模态模型
