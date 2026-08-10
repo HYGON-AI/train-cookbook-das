@@ -39,6 +39,6 @@ docker pull harbor.sourcefind.cn:5443/dcu/admin/base/custom:pytorch2.9.0-ubuntu2
   </tbody>
 </table>
 
-## DCU 适配注意
+## HCU 适配注意
 
-- Qwen1.5 原生支持 BF16，在 DCU 上运行稳定
+- Qwen1.5 原生支持 BF16，在 HCU 上运行稳定

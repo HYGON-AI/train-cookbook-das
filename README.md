@@ -1,8 +1,8 @@
-# HCU train Cookbook
+# train cookbook-das
 
 ## 📖 简介
 
-本仓库整理了在 HCU 硬件上部署、调优和运行 AI 模型的经验与最佳实践，涵盖：
+本仓库整理了在 HCU 硬件上训练、调优和运行 AI 模型的经验与最佳实践，涵盖：
 
 - **环境搭建** — DTK 工具链、驱动安装、Python 环境配置
 - **数据处理** — LLM、VLM数据处理脚本
