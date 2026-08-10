@@ -9,7 +9,7 @@
 - **模型训练** — LLM、VLM预训练、微调
 - **性能优化** — 显存优化、算子调优、量化、多卡并行
 - **框架适配** — Megatron-LM、Megatron-Bridge、Transformers、Transformer-Engine 等
-- **故障排查** — 常见问题、错误码、FAQ
+- **故障排查** — [常见问题](docs\troubleshooting\common_issue.md)、[错误码](docs\troubleshooting\error-codes.md)、[FAQ](docs\troubleshooting\faq.md)
 - **性能基准** — 各模型在 HCU 上的实测数据
 
 ## 📋 模型列表(绿色对勾可点击)
@@ -176,6 +176,9 @@
     </tr>
   </tbody>
 </table>
+
+## 快速开始
+在HCU上跑一个AI模型模型，请参考[快速开始](http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/blob/core_v0.18.2/docs/getting-started.md)。
 
 ## 🤝 贡献
 
