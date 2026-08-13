@@ -27,14 +27,14 @@ docker pull harbor.sourcefind.cn:5443/dcu/admin/base/custom:pytorch2.9.0-ubuntu2
       <td>BF16</td><td>2.9</td><td>2.10</td>
       <td>8</td>
       <td><=4096</td>
-      <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.18.2/examples/gemma3">✅</a></td>
+      <td align="center"><a href="https://github.com/HYGON-AI/Megatron-LM-das/tree/core_v0.18.2/examples/gemma3">✅</a></td>
     </tr>
     <tr>
       <td><a href="https://www.modelscope.cn/models/google/gemma-3-12b-it/files">Gemma 3-12B</a></td>
       <td>BF16</td><td>2.9</td><td>2.10</td>
       <td>8</td>
       <td><=4096</td>
-      <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.18.2/examples/gemma3">✅</a></td>
+      <td align="center"><a href="https://github.com/HYGON-AI/Megatron-LM-das/tree/core_v0.18.2/examples/gemma3">✅</a></td>
     </tr>
     <tr>
       <td>Gemma 3-27B</td>

@@ -48,7 +48,7 @@ docker pull harbor.sourcefind.cn:5443/dcu/admin/base/custom:pytorch2.9.0-ubuntu2
       <td>BF16</td><td>2.9</td><td>2.10</td>
       <td>8</td>
       <td><=32768</td>
-      <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.18.2/examples/qwen3">✅</a></td>
+      <td align="center"><a href="https://github.com/HYGON-AI/Megatron-LM-das/tree/core_v0.18.2/examples/qwen3">✅</a></td>
     <tr>
       <td>Qwen3-14B</td>
       <td>-</td><td>-</td><td>-</td>
@@ -61,14 +61,14 @@ docker pull harbor.sourcefind.cn:5443/dcu/admin/base/custom:pytorch2.9.0-ubuntu2
       <td>BF16</td><td>2.9</td><td>2.10</td>
       <td>32</td>
       <td><=8192</td>
-      <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.18.2/examples/qwen3">✅</a></td>
+      <td align="center"><a href="https://github.com/HYGON-AI/Megatron-LM-das/tree/core_v0.18.2/examples/qwen3">✅</a></td>
     </tr>
     <tr>
       <td><a href="https://www.modelscope.cn/models/Qwen/Qwen3-30B-A3B">Qwen3-30B-A3B</a></td>
       <td>BF16</td><td>2.9</td><td>2.10</td>
       <td>8</td>
       <td><=8192</td>
-      <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/tree/core_v0.18.2/examples/qwen3">✅</a></td>
+      <td align="center"><a href="https://github.com/HYGON-AI/Megatron-LM-das/tree/core_v0.18.2/examples/qwen3">✅</a></td>
   </tbody>
 </table>
 
