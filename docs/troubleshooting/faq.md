@@ -24,7 +24,7 @@ mpirun -np ${GPUS}  --hostfile ${HOSTFILE} \
                     --allow-run-as-root \
                     --bind-to none \
                     --mca plm_rsh_no_tree_spawn 1 \
-                    --mca plm_rsh_args "-p PORT" \
+                    --mca plm_rsh_args "-p PORT" \ # 在这里添加
                     bash -c "
                     source ${DTK_ENV} && \
                     source ${NCCL_ENV} && \
@@ -62,7 +62,6 @@ HCU-Megatron是基于海光 HCU，将 NVIDIA 的 Megatron-LM移植并适配到�
 
 ### HCU-Megatron的性能如何？
 HCU-Megatron 的性能表现通常可以达到同级别 NVIDIA GPU 的 **100% - 150%**。
-BW1000对标Nvidia A100，BW1100对标Nvidia H20。
 
 ### HCU-Megatron优势场景是那些？
-HCU-Megatron 的优势场景主要包括常见的dense模型,如Llama2（7B/13B/70B），Qwen3（8B/14B）等。
+HCU-Megatron 的优势场景主要包括常见的dense训练,如Llama2（7B/13B/70B），Qwen3（8B/14B/32B）等。

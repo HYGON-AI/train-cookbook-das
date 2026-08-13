@@ -20,17 +20,16 @@ export NCCL_IB_HCA=mlx5_2:1,mlx5_3:1,mlx5_4:1,mlx5_5:1,mlx5_8:1,mlx5_9:1
 
 ### socket配置
 1.ifconfig -a 在容器内查看所有网卡
-举例：有
-eth0高速网卡,eth1已donw的网卡,eth2管理网卡等
+举例：有 eth0 高速网卡, eth1 已 donw 的网卡, eth2 管理网卡等
 
 最终参数：
+```shell
 export GLOO_SOCKET_IFNAME=eth0
 export NCCL_SOCKET_IFNAME=eth0
-
+```
       
 ### 模型路径
 模型下载：已适配模型可在对应md文件中，通过点击模型名称跳转至模型所在页面进行下载。
-                                             
 
 ## 训练问题
 

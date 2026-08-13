@@ -9,7 +9,7 @@
 - **模型训练** — LLM、VLM预训练、微调
 - **性能优化** — 显存优化、算子调优、量化、多卡并行
 - **框架适配** — Megatron-LM、Megatron-Bridge、Transformers、Transformer-Engine 等
-- **故障排查** — [常见问题](http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu-train-cookbook/-/blob/github/docs/troubleshooting/common_issue.md)、[错误码](http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu-train-cookbook/-/blob/github/docs/troubleshooting/error-codes.md)、[FAQ](http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu-train-cookbook/-/blob/github/docs/troubleshooting/faq.md)
+- **故障排查** — [常见问题](./docs/troubleshooting/common-issue.md)、[错误码](./docs/troubleshooting/error-codes.md)、[FAQ](./docs/troubleshooting/faq.md)
 - **性能基准** — 各模型在 HCU 上的实测数据
 
 ## 📋 模型列表(绿色对勾可点击)
@@ -113,14 +113,14 @@
       <td align="center"><a href="docs/model-foundation/BW1000/LLM/Qwen-2.md">✅</a></td>
       <td align="center">🚧</td>
       <td align="center">-</td>
-      <td align="center">-</td>
+      <td align="center"><a href="docs/model-alignment/BW1100/LLM/Qwen-2.md">✅</a></td>
     </tr>
     <tr>
       <td>Qwen 3</td>
       <td align="center"><a href="docs/model-foundation/BW1000/LLM/Qwen-3.md">✅</a></td>
       <td align="center"><a href="docs/model-foundation/BW1100/LLM/Qwen-3.md">✅</a></td>
       <td align="center">-</td>
-      <td align="center">-</td>
+      <td align="center"><a href="docs/model-alignment/BW1100/LLM/Qwen-3.md">✅</a></td>
     </tr>
     <tr>
       <td>Qwen3-Next</td>
@@ -165,7 +165,7 @@
       <td align="center"><a href="docs/model-foundation/BW1000/VLM/Qwen-3-VL.md">✅</a></td>
       <td align="center"><a href="docs/model-foundation/BW1100/VLM/Qwen-3-VL.md">✅</a></td>
       <td align="center">-</td>
-      <td align="center">-</td>
+      <td align="center"><a href="docs/model-alignment/BW1100/VLM/Qwen-3-VL.md">✅</a></td>
     </tr>
     <tr>
       <td>Qwen 3.5-VL</td>
@@ -178,7 +178,16 @@
 </table>
 
 ## 快速开始
-在HCU上跑一个AI模型模型，请参考[快速开始](http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/blob/core_v0.18.2/docs/getting-started.md)。
+在HCU上跑一个AI模型模型，请参考
+- [Megatron-LM-das-快速开始](https://github.com/HYGON-AI/Megatron-LM-das)。
+- [Verl-das-快速开始](https://github.com/HYGON-AI/verl-das)。
+
+## 📄 许可证与第三方来源
+
+本项目采用 [MIT License](LICENSE)。
+
+仓库不直接内嵌第三方源码。文档中引用的模型、推理框架、工具和服务仍由各自项目的许可证约束，具体说明见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+
 
 ## 🤝 贡献
 
