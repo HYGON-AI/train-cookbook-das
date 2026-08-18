@@ -25,6 +25,19 @@
 
 ## 文档规范
 
+### 新仓库添加
+
+- `docs/framework/` 目录下面创建新增仓库的介绍
+    > 参考示例: docs/framework/hcu-megatron.md 和 docs/framework/hcu-verl.md
+- `docs/` 目录下面创建新增仓库的目录, 
+    > 参考示例: docs/model-foundation是megatron, docs/model-alignment是verl强化学习, 可以取一个合适的名字
+- `docs/optimization/` 目录下面创建新增仓库对应的调优建议, 如果目前没有可以先空着
+    > 参考示例: docs/optimization/hcu-megatron-optim
+- 首页 `README` 中创建新增仓库对应的快速开始
+    > 参考示例: 前两个megatron和verl的写法.
+
+### 已有仓库的数据完善
+
 **核心标准：别人使用你的配置和脚本，不需要问任何问题就能跑起来，并得到接近的结果。**
 - 对于尚未达到最优性能的脚本, 不需要填写性能参考
 - 对于已达到最优性能的脚本, 需要填写性能参考
