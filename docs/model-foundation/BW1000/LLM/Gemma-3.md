@@ -5,7 +5,7 @@
 Gemma-3 是google开源的大语言模型, 语言模型有 1B 参数。
 
 ## 推荐镜像
-docker pull harbor.sourcefind.cn:5443/dcu/admin/base/custom:pytorch2.9.0-ubuntu22.04-dtk26.04-py3.10_te2.10
+[pytorch2.9.0-ubuntu22.04-dtk26.04-py3.10_te2.10](https://developer.sourcefind.cn/servicelist/detail?post_id=a053d44c-b3c7-11f0-9a0f-acde48001122&active=TagDownload)
 
 ## 模型列表
 
