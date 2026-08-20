@@ -3,7 +3,7 @@ name: script-formatting-recipe
 description: Convention for formatting verl recipe shell scripts — parameter grouping, bash arrays, section headers
 ---
 
-When reformatting messy verl recipe scripts (or writing new ones), follow this convention strictly. The reference template is [run_qwen3_vl_8b_fsdp2.sh](http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_verl/-/blob/main/examples/recipe/run_qwen2_5_7b_fsdp2.sh).
+When reformatting messy verl recipe scripts (or writing new ones), follow this convention strictly. The reference template is [run_qwen3_vl_8b_fsdp2.sh](https://github.com/HYGON-AI/verl-das/tree/main/examples/grpo_trainer).
 
 **Why:** User wants consistent, readable scripts with logical grouping. Messy flat parameter lists are hard to maintain.
 

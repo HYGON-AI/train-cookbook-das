@@ -2,7 +2,7 @@
 
 ## 基础问题
 ### 如何使用HCU？
-在HCU上跑一个AI模型模型，请参考[快速开始](http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/blob/core_v0.18.2/docs/getting-started.md)。
+在HCU上跑一个AI模型模型，请参考[快速开始](https://github.com/HYGON-AI/Megatron-LM-das/blob/core_v0.18.2/docs/getting-started.md)。
 
 ### 如何多节点训练？
 #### 配置容器跨节点免密
