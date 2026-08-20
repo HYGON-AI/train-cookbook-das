@@ -158,7 +158,7 @@ FA 属于通用的优化手段，可以加快 self attn 的计算，减少显存
 
 将 PP 的反向传播中的 W-Grad 和 Y-Grad 拆分为两个独立的计算阶段，实现更细粒度的流水调度。
 
-详细参考：http://42.228.13.241:10068/dcutoolkit/deeplearing/dcu_megatron/-/blob/core_v0.18.2/docs/features/pipeline-parallel.md
+详细参考：https://github.com/HYGON-AI/Megatron-LM-das/blob/core_v0.18.2/docs/features/pipeline-parallel.md
 
 注意事项：该优化可能依赖 NCCL P2P 通信，若卡住可尝试调整以下环境变量：
 
