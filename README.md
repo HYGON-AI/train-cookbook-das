@@ -1,4 +1,4 @@
-# train cookbook-das
+# train-cookbook-das
 
 ## 📖 简介
 
@@ -8,7 +8,7 @@
 - **数据处理** — LLM、VLM数据处理脚本
 - **模型训练** — LLM、VLM预训练、微调
 - **性能优化** — 显存优化、算子调优、量化、多卡并行
-- **框架适配** — Megatron-LM、Megatron-Bridge、Transformers、Transformer-Engine 等
+- **框架适配** — Megatron-LM、Megatron-Bridge、Verl、Transformer-Engine 等
 - **故障排查** — [常见问题](./docs/troubleshooting/common-issue.md)、[错误码](./docs/troubleshooting/error-codes.md)、[FAQ](./docs/troubleshooting/faq.md)
 - **性能基准** — 各模型在 HCU 上的实测数据
 
