@@ -1,6 +1,9 @@
 <div align="center">
 
-![inference-cookbook-das Logo](./assets/train-cookbook-das.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/train-cookbook-das-dark.svg">
+  <img src="./assets/train-cookbook-das.svg" alt="Train Cookbook DAS Logo">
+</picture>
 
 </div>
 
