@@ -1,0 +1,38 @@
+# DeepSeek-V3
+
+## 模型简介
+
+DeepSeek-V3 是一个开源的MoE大语言模型, 有 671B 参数规模。
+
+## 推荐镜像
+[pytorch2.9.0-ubuntu22.04-dtk26.04-py3.10_te2.10](https://developer.sourcefind.cn/servicelist/detail?post_id=a053d44c-b3c7-11f0-9a0f-acde48001122&active=TagDownload)
+
+## 模型列表
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">模型</th>
+      <th rowspan="2">精度</th>
+      <th rowspan="2">torch版本</th>
+      <th rowspan="2">TE版本</th>
+      <th rowspan="2">推荐卡数</th>
+      <th rowspan="2">序列长度</th>
+      <th rowspan="2">示例脚本</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DeekSeek V3-671B</td>
+      <td>-</td><td>-</td><td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td align="center">正在适配</td>
+    </tr>
+  </tbody>
+</table>
+
+## HCU 适配注意
+
+- DeepSeek-V3 原生支持 bf16，在 HCU 上运行稳定
+- DeepSeek-V3 只有一个671B的版本

@@ -1,0 +1,28 @@
+# 错误码参考
+
+## HIP 错误码
+
+| 错误码 | 含义 | 常见原因 | 解决方案 |
+|--------|------|---------|---------|
+| `hipErrorOutOfMemory` | 显存不足 | 模型/批次过大 | 减小 batch size 或使用量化 |
+| `hipErrorInvalidValue` | 无效参数 | 参数配置错误 | 检查 API 参数 |
+| `hipErrorNoDevice` | 无可用设备 | 驱动问题 | 检查 hy-smi |
+| `hipErrorPeerAccessUnsupported` | 不支持 P2P | 硬件/拓扑限制 | 检查 HCU 拓扑 |
+
+## PyTorch 错误
+
+| 错误信息 | 原因 | 解决方案 |
+|---------|------|---------|
+| `CUDA error: device-side assert triggered` | 张量索引越界 | 检查输入数据 |
+| `RuntimeError: Expected all tensors to be on the same device` | 设备不一致 | 检查 `.to(device)` |
+| `RuntimeError: HIP error: invalid argument` | HIP 参数错误 | 检查 kernel 参数 |
+| `OOM when allocating tensor` | 显存不足 | 减小模型/批次 |
+
+## 通信错误
+
+| 错误信息 | 原因 | 解决方案 |
+|---------|------|---------|
+| `NCCL error: unhandled system error` | 网络问题 | 检查网络连接 |
+| `NCCL WARN: Connect/recv failed` | 节点通信失败 | 检查防火墙和 SSH |
+| `NCCL error: invalid usage` | NCCL 配置错误 | 检查环境变量 |
+| `Gloo error: Unable to find address for: ` | 环境变量绑定错误网卡 | 查看实际网卡并修改网卡配置 |
