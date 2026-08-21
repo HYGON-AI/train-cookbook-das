@@ -185,7 +185,7 @@
 </table>
 
 ## 快速开始
-在HCU上跑一个AI模型模型，请参考
+在 HCU 上运行一个 AI 模型，请参考：
 - [Megatron-LM-das-快速开始](https://github.com/HYGON-AI/Megatron-LM-das)。
 - [Verl-das-快速开始](https://github.com/HYGON-AI/verl-das)。
 
