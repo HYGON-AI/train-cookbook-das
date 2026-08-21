@@ -1,4 +1,8 @@
-# train-cookbook-das
+<div align="center">
+
+![inference-cookbook-das Logo](./assets/train-cookbook-das.svg)
+
+</div>
 
 ## 📖 简介
 
