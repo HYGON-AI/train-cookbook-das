@@ -29,7 +29,7 @@
       <th colspan="2" style="text-align:center"><a href="https://github.com/HYGON-AI/Megatron-LM-das">Megatron-LM-DAS</a></th>
       <th colspan="2" style="text-align:center"><a href="https://github.com/HYGON-AI/verl-das">VERL-DAS</a></th>
       <th colspan="2" style="text-align:center"><a href="https://github.com/hiyouga/LLaMAFactory">LlamaFactory</a></th>
-      <th colspan="2" style="text-align:center"><a href="https://github.com/modelscope/ms-swift">ms-swift</a></th>
+      <th colspan="2" style="text-align:center"><a href="https://github.com/HYGON-AI/slime-das">SLIME-DAS</a></th>
     </tr>
     <tr>
       <th align="center">BW1000</th>
@@ -44,10 +44,10 @@
   </thead>
   <tbody>
     <tr>
-      <td rowspan="14">Large Language Models (LLM)</td>
+      <td rowspan="17">Large Language Models (LLM)</td>
       <td>DeepSeek v3</td>
-      <td align="center"><a href="docs/model-framework/megatron/BW1000/LLM/DeepSeek-3.md">✅</a></td>
-      <td align="center"><a href="docs/model-framework/megatron/BW1100/LLM/DeepSeek-3.md">✅</a></td>
+      <td align="center"><a href="docs/model-framework/megatron/BW1000/DeepSeek-3.md">✅</a></td>
+      <td align="center"><a href="docs/model-framework/megatron/BW1100/DeepSeek-3.md">✅</a></td>
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
@@ -68,7 +68,7 @@
     </tr>
     <tr>
       <td>Gemma 3</td>
-      <td align="center"><a href="docs/model-framework/megatron/BW1000/LLM/Gemma-3.md">✅</a></td>
+      <td align="center"><a href="docs/model-framework/megatron/BW1000/Gemma-3.md">✅</a></td>
       <td align="center">🚧</td>
       <td align="center">-</td>
       <td align="center">-</td>
@@ -102,6 +102,17 @@
     <tr>
       <td>GLM-5</td>
       <td align="center">🚧</td>
+      <td align="center">🚧</td>
+      <td align="center">-</td>
+      <td align="center">-</td>
+      <td align="center">-</td>
+      <td align="center">-</td>
+      <td align="center"><a href="docs/model-framework/slime-das/BW1000/LLM/GLM-5.md">✅</a></td>
+      <td align="center">-</td>
+    </tr>
+    <tr>
+      <td>GLM-5.2</td>
+      <td align="center"><a href="docs/model-framework/megatron/BW1000/GLM-5.2.md">✅</a></td>
       <td align="center">🚧</td>
       <td align="center">-</td>
       <td align="center">-</td>
@@ -145,8 +156,8 @@
     </tr>
     <tr>
       <td>Llama 2/3</td>
-      <td align="center"><a href="docs/model-framework/megatron/BW1000/LLM/Llama.md">✅</a></td>
-      <td align="center"><a href="docs/model-framework/megatron/BW1100/LLM/Llama.md">✅</a></td>
+      <td align="center"><a href="docs/model-framework/megatron/BW1000/Llama.md">✅</a></td>
+      <td align="center"><a href="docs/model-framework/megatron/BW1100/Llama.md">✅</a></td>
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
@@ -156,7 +167,7 @@
     </tr>
     <tr>
       <td>Qwen 1.5</td>
-      <td align="center"><a href="docs/model-framework/megatron/BW1000/LLM/Qwen-1.5.md">✅</a></td>
+      <td align="center"><a href="docs/model-framework/megatron/BW1000/Qwen-1.5.md">✅</a></td>
       <td align="center">🚧</td>
       <td align="center">-</td>
       <td align="center">-</td>
@@ -167,7 +178,7 @@
     </tr>
     <tr>
       <td>Qwen 2/2.5</td>
-      <td align="center"><a href="docs/model-framework/megatron/BW1000/LLM/Qwen-2.md">✅</a></td>
+      <td align="center"><a href="docs/model-framework/megatron/BW1000/Qwen-2.md">✅</a></td>
       <td align="center">🚧</td>
       <td align="center">-</td>
       <td align="center"><a href="docs/model-framework/verl/BW1100/LLM/Qwen-2.md">✅</a></td>
@@ -178,18 +189,18 @@
     </tr>
     <tr>
       <td>Qwen 3</td>
-      <td align="center"><a href="docs/model-framework/megatron/BW1000/LLM/Qwen-3.md">✅</a></td>
-      <td align="center"><a href="docs/model-framework/megatron/BW1100/LLM/Qwen-3.md">✅</a></td>
+      <td align="center"><a href="docs/model-framework/megatron/BW1000/Qwen-3.md">✅</a></td>
+      <td align="center"><a href="docs/model-framework/megatron/BW1100/Qwen-3.md">✅</a></td>
       <td align="center">-</td>
       <td align="center"><a href="docs/model-framework/verl/BW1100/LLM/Qwen-3.md">✅</a></td>
       <td align="center">-</td>
       <td align="center">-</td>
-      <td align="center">-</td>
+      <td align="center"><a href="docs/model-framework/slime-das/BW1000/LLM/Qwen-3.md">✅</a></td>
       <td align="center">-</td>
     </tr>
     <tr>
       <td>Qwen3-Next</td>
-      <td align="center"><a href="docs/model-framework/megatron/BW1000/LLM/Qwen3-Next.md">✅</a></td>
+      <td align="center"><a href="docs/model-framework/megatron/BW1000/Qwen3-Next.md">✅</a></td>
       <td align="center">🚧</td>
       <td align="center">-</td>
       <td align="center">-</td>
@@ -203,7 +214,7 @@
     <tr>
       <td rowspan="6">Vision Language Models (VLM)</td>
       <td>Gemma 3-VL</td>
-      <td align="center"><a href="docs/model-framework/megatron/BW1000/VLM/Gemma-3-VL.md">✅</a></td>
+      <td align="center"><a href="docs/model-framework/megatron/BW1000/Gemma-3-VL.md">✅</a></td>
       <td align="center">🚧</td>
       <td align="center">-</td>
       <td align="center">-</td>
@@ -236,8 +247,8 @@
     </tr>
     <tr>
       <td>Qwen 2/2.5-VL</td>
-      <td align="center"><a href="docs/model-framework/megatron/BW1000/VLM/Qwen-2-VL.md">✅</a></td>
-      <td align="center"><a href="docs/model-framework/megatron/BW1100/VLM/Qwen-2-VL.md">✅</a></td>
+      <td align="center"><a href="docs/model-framework/megatron/BW1000/Qwen-2-VL.md">✅</a></td>
+      <td align="center"><a href="docs/model-framework/megatron/BW1100/Qwen-2-VL.md">✅</a></td>
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
@@ -247,8 +258,8 @@
     </tr>
     <tr>
       <td>Qwen 3-VL</td>
-      <td align="center"><a href="docs/model-framework/megatron/BW1000/VLM/Qwen-3-VL.md">✅</a></td>
-      <td align="center"><a href="docs/model-framework/megatron/BW1100/VLM/Qwen-3-VL.md">✅</a></td>
+      <td align="center"><a href="docs/model-framework/megatron/BW1000/Qwen-3-VL.md">✅</a></td>
+      <td align="center"><a href="docs/model-framework/megatron/BW1100/Qwen-3-VL.md">✅</a></td>
       <td align="center">-</td>
       <td align="center"><a href="docs/model-framework/verl/BW1100/VLM/Qwen-3-VL.md">✅</a></td>
       <td align="center">-</td>
@@ -258,13 +269,37 @@
     </tr>
     <tr>
       <td>Qwen 3.5-VL</td>
-      <td align="center"><a href="docs/model-framework/megatron/BW1000/VLM/Qwen-3.5-VL.md">✅</a></td>
-      <td align="center"><a href="docs/model-framework/megatron/BW1100/VLM/Qwen-3.5-VL.md">✅</a></td>
+      <td align="center"><a href="docs/model-framework/megatron/BW1000/Qwen-3.5-VL.md">✅</a></td>
+      <td align="center"><a href="docs/model-framework/megatron/BW1100/Qwen-3.5-VL.md">✅</a></td>
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
+      <td align="center">-</td>
+    </tr>
+  </tbody>
+</table>
+
+### 多模态生成模型
+
+<table align="center">
+  <thead>
+    <tr>
+      <th rowspan="2">类型</th>
+      <th rowspan="2">模型</th>
+      <th colspan="2" style="text-align:center"><a href="https://github.com/modelscope/DiffSynth-Studio">DiffSynth-Studio</a></th>
+    </tr>
+    <tr>
+      <th align="center">BW1000</th>
+      <th align="center">BW1100</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="14">Omni-modal Generation Model</td>
+      <td>MiniMax-H3</td>
+      <td align="center"><a href="docs/model-framework/DiffSynthStudio/BW1000/MiniMax-H3.md">✅</a></td>
       <td align="center">-</td>
     </tr>
   </tbody>
@@ -347,8 +382,13 @@
 
 ## 快速开始
 在 HCU 上运行一个 AI 模型，请参考：
-- [Megatron-LM-das-快速开始](https://github.com/HYGON-AI/Megatron-LM-das)。
-- [Verl-das-快速开始](https://github.com/HYGON-AI/verl-das)。
+- [Megatron-LM-das 快速开始](https://github.com/HYGON-AI/Megatron-LM-das)。
+- [Verl-das 快速开始](https://github.com/HYGON-AI/verl-das)。
+- [Slime-das 快速开始](docs/framework/slime-das.md)。
+- [ms-swift 快速开始(暂无)]()。
+- [llamafactory 快速开始(暂无)]()。
+- [mmcv 快速开始(暂无)]()。
+- [diffsynthstudio 快速开始](./docs/framework/diffsynthstudio.md)。
 
 ## 📄 许可证与第三方来源
 

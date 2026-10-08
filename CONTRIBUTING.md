@@ -29,8 +29,8 @@
 
 - `docs/framework/` 目录下面创建新增仓库的介绍
     > 参考示例: docs/framework/hcu-megatron.md 和 docs/framework/hcu-verl.md
-- `docs/` 目录下面创建新增仓库的目录, 
-    > 参考示例: docs/model-foundation是megatron, docs/model-alignment是verl强化学习, 可以取一个合适的名字
+- `docs/model-framework` 目录下面创建新增仓库的目录
+    > 参考示例: docs/model-framework/megatron是基于megatron框架跑的模型, docs/model-framework/verl是基于verl框架跑的强化学习模型
 - `docs/optimization/` 目录下面创建新增仓库对应的调优建议, 如果目前没有可以先空着
     > 参考示例: docs/optimization/hcu-megatron-optim
 - 首页 `README` 中创建新增仓库对应的快速开始
@@ -38,10 +38,8 @@
 
 ### 已有仓库的数据完善
 
-**核心标准：别人使用你的配置和脚本，不需要问任何问题就能跑起来，并得到接近的结果。**
-- 对于尚未达到最优性能的脚本, 不需要填写性能参考
-- 对于已达到最优性能的脚本, 需要填写性能参考
-> 参考示例：[docs/model-framework/megatron/BW1100/LLM/Qwen-3.md](./docs/model-framework/megatron/BW1100/LLM/Qwen-3.md)
+**核心标准：别人使用你的配置和脚本，不需要问任何问题就能跑起来。**
+> 参考示例：[docs/model-framework/megatron/BW1100/Qwen-3.md](./docs/model-framework/megatron/BW1100/Qwen-3.md)
 
 **❌ 不要这样做：**
 
@@ -51,5 +49,5 @@
 **✅ 应该这样做：**
 
 - 使用官方模型名称和参数，例如 `meta-llama/Llama-3-8B-Instruct`，不要提交非官方开源模型或自己改动后的模型(例如改变层数, 改变专家数等之后的模型)
-- 仅针对以下两种 HCU 型号撰写适配文档：`BW1000`、`BW1100`，不要添加其他型号
+- 仅针对以下两种 HCU 型号撰写适配文档：`BW1000`、`BW1100(BW1101)`，不要添加其他型号
 - 对于适配的模型, 填写可运行的参数; 对于优化后的模型, 填写最佳性能参数和可复现环境信息
