@@ -2,13 +2,14 @@
 
 ## 模型简介
 
-Qwen3-Next 是阿里通义千问第三代大预言模型, 为qwen3.5的抢先预览版。
+Qwen3-Next 是阿里通义千问第三代视觉多模态理解模型。
 
 ## 使用示例
 1. 根据所用框架 查看对应框架的快速开始
     - [megatron-lm 快速开始](https://github.com/HYGON-AI/Megatron-LM-das/blob/core_v0.18.2/docs/getting-started.md)
-    - [ms-swift 快速开始(暂无)]()
-    - [megatron-bridge 快速开始(暂无)]()
+    - [llamafactory 快速开始]()
+    - [ms-swift 快速开始]()
+    - [megatron-bridge 快速开始]()
 2. 执行模型对应的脚本
 
 ## 模型列表

@@ -7,8 +7,9 @@ Gemma-3 是google开源的大语言模型, 语言模型有 1B 参数。
 ## 使用示例
 1. 根据所用框架 查看对应框架的快速开始
     - [megatron-lm 快速开始](https://github.com/HYGON-AI/Megatron-LM-das/blob/core_v0.18.2/docs/getting-started.md)
-    - [ms-swift 快速开始(暂无)]()
-    - [megatron-bridge 快速开始(暂无)]()
+    - [llamafactory 快速开始]()
+    - [ms-swift 快速开始]()
+    - [megatron-bridge 快速开始]()
 2. 执行模型对应的脚本
 
 ## 模型列表
@@ -35,6 +36,14 @@ Gemma-3 是google开源的大语言模型, 语言模型有 1B 参数。
       <td>8</td>
       <td><=4096</td>
       <td align="center"><a href="https://github.com/HYGON-AI/Megatron-LM-das/tree/core_v0.18.2/examples/gemma3">link</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.modelscope.cn/models/LLM-Research/gemma-3-1b-it">Gemma 3-1B</a></td>
+      <td>megatron-bridge</td>
+      <td>BF16</td><td>10.16.1.152:5000/jenkins/model_test_env/megatron:0.18.2-ubuntu22.04-dtk2610-py3.12-20260928-1056</a></td>
+      <td>8</td>
+      <td><=4096</td>
+      <td align="center"></td>
     </tr>
   </tbody>
 </table>

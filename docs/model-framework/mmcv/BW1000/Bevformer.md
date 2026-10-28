@@ -11,18 +11,21 @@ BEVFormer 是基于 Transformer 的鸟瞰视角（BEV）3D 目标检测模型，
   <thead>
     <tr>
       <th rowspan="2">模型</th>
-      <th rowspan="2">推荐卡数</th>
+      <th rowspan="2">测试卡数</th>
       <th rowspan="2">精度</th>
-      <th colspan="2" style="text-align:center">环境版本</th>
-      <th colspan="3" style="text-align:center">推荐训练参数</th>
-      <th rowspan="2">示例脚本</th>
+      <th colspan="3" style="text-align:center">训练参数</th>
+      <th colspan="3" style="text-align:center">模型精度</th>
+      <th rowspan="2">吞吐量(imgs/sec/gpu)</th>
+      <th rowspan="2">日志</th>
+      <th rowspan="2">环境构建</th>
     </tr>
     <tr>
-      <th>torch</th>
-      <th>mmcv</th>
-      <th>Batch Size</th>
-      <th>Global Batch Size</th>
-      <th>Epoch</th>
+      <th>batch size</th>
+      <th>global batch size</th>
+      <th>epoch</th>
+      <th>NDS</th>
+      <th>mAP</th>
+      <th>Final Loss</th>
     </tr>
   </thead>
   <tbody>
@@ -30,12 +33,15 @@ BEVFormer 是基于 Transformer 的鸟瞰视角（BEV）3D 目标检测模型，
       <td>Bevformer</td>
       <td>8</td>
       <td>FP32</td>
-      <td>2.7.1</td>
-      <td>1.6.1</td>
       <td>2</td>
       <td>16</td>
       <td>24</td>
-      <td><a href="https://developer.sourcefind.cn/codes/ts-models-opt/training/autonomous-driving-models/-/blob/bw1101_hygon/models/BEVFormer/BEVFormer/start_bevformer.sh">✅</a></td>
+      <td>0.5100</td>
+      <td>0.4096</td>
+      <td>3.1316</td>
+      <td>0.659</td>
+      <td><a href="./logs/bw1000_bevformer_8card_bs2_24e_fp32.log">log</a></td>
+      <td><a href="https://developer.sourcefind.cn/codes/ts-models-opt/training/autonomous-driving-models/-/tree/bw1101_hygon/models/BEVFormer">link</a></td>
     </tr>
   </tbody>
 </table>

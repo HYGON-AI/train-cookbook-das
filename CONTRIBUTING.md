@@ -39,7 +39,7 @@
 ### 已有仓库的数据完善
 
 **核心标准：别人使用你的配置和脚本，不需要问任何问题就能跑起来。**
-> 参考示例：[docs/model-framework/megatron/BW1100/Qwen-3.md](./docs/model-framework/megatron/BW1100/Qwen-3.md)
+> 参考示例：[docs/model-framework/BW1100/Qwen-3.md](./docs/model-framework/megatron/BW1100/Qwen-3.md)
 
 **❌ 不要这样做：**
 

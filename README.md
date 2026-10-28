@@ -56,6 +56,17 @@
       <td align="center">-</td>
     </tr>
     <tr>
+      <td>DeepSeek v4</td>
+      <td align="center"><a href="docs/model-framework/megatron/BW1000/DeepSeek-4.md">✅</a></td>
+      <td align="center">🚧</td>
+      <td align="center">-</td>
+      <td align="center">-</td>
+      <td align="center">-</td>
+      <td align="center">-</td>
+      <td align="center">-</td>
+      <td align="center">-</td>
+    </tr>
+    <tr>
       <td>Gemma 2</td>
       <td align="center">-</td>
       <td align="center">-</td>
@@ -79,46 +90,24 @@
     </tr>
     <tr>
       <td>Gemma 4</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
-    </tr>
-    <tr>
-      <td>GLM-4.5</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
-    </tr>
-    <tr>
-      <td>GLM-5</td>
+      <td align="center"><a href="docs/model-framework/megatron/BW1000/Gemma-4.md">✅</a></td>
       <td align="center">🚧</td>
+      <td align="center">-</td>
+      <td align="center">-</td>
+      <td align="center">-</td>
+      <td align="center">-</td>
+      <td align="center">-</td>
+      <td align="center">-</td>
+    </tr>
+    <tr>
+      <td>GLM-5/5.1/5.2</td>
+      <td align="center"><a href="docs/model-framework/megatron/BW1000/GLM-5.md">✅</a></td>
       <td align="center">🚧</td>
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center"><a href="docs/model-framework/slime-das/BW1000/LLM/GLM-5.md">✅</a></td>
-      <td align="center">-</td>
-    </tr>
-    <tr>
-      <td>GLM-5.2</td>
-      <td align="center"><a href="docs/model-framework/megatron/BW1000/GLM-5.2.md">✅</a></td>
-      <td align="center">🚧</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
-      <td align="center">-</td>
       <td align="center">-</td>
     </tr>
     <tr>
@@ -199,8 +188,30 @@
       <td align="center">-</td>
     </tr>
     <tr>
-      <td>Qwen3-Next</td>
-      <td align="center"><a href="docs/model-framework/megatron/BW1000/Qwen3-Next.md">✅</a></td>
+      <td>Qwen3.5</td>
+      <td align="center"><a href="docs/model-framework/megatron/BW1000/Qwen-3.5.md">✅</a></td>
+      <td align="center">🚧</td>
+      <td align="center">-</td>
+      <td align="center">-</td>
+      <td align="center">-</td>
+      <td align="center">-</td>
+      <td align="center">-</td>
+      <td align="center">-</td>
+    </tr>
+    <tr>
+      <td>Qwen3.8</td>
+      <td align="center"><a href="docs/model-framework/megatron/BW1000/Qwen-3.8.md">✅</a></td>
+      <td align="center">🚧</td>
+      <td align="center">-</td>
+      <td align="center">-</td>
+      <td align="center">-</td>
+      <td align="center">-</td>
+      <td align="center">-</td>
+      <td align="center">-</td>
+    </tr>
+    <tr>
+      <td>MiniMax-M3</td>
+      <td align="center"><a href="docs/model-framework/megatron/BW1000/MiniMax-M3.md">✅</a></td>
       <td align="center">🚧</td>
       <td align="center">-</td>
       <td align="center">-</td>
@@ -283,7 +294,7 @@
 
 ### 多模态生成模型
 
-<table align="center">
+<table>
   <thead>
     <tr>
       <th rowspan="2">类型</th>
@@ -309,7 +320,7 @@
 
 面向 Physical AI 模型方向，涵盖自动驾驶、具身智能与世界模型
 
-<table align="center">
+<table>
   <thead>
     <tr>
       <th>类型</th>

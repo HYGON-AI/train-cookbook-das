@@ -7,8 +7,9 @@ Qwen3.5-VL 是阿里通义千问第三代纯视觉多模态理解模型，支持
 ## 使用示例
 1. 根据所用框架 查看对应框架的快速开始
     - [megatron-lm 快速开始](https://github.com/HYGON-AI/Megatron-LM-das/blob/core_v0.18.2/docs/getting-started.md)
-    - [ms-swift 快速开始(暂无)]()
-    - [megatron-bridge 快速开始(暂无)]()
+    - [llamafactory 快速开始]()
+    - [ms-swift 快速开始]()
+    - [megatron-bridge 快速开始]()
 2. 执行模型对应的脚本
 
 ## 模型列表
@@ -34,7 +35,7 @@ Qwen3.5-VL 是阿里通义千问第三代纯视觉多模态理解模型，支持
       <td>BF16</td><td><a href="https://developer.sourcefind.cn/servicelist/detail?post_id=a053d44c-b3c7-11f0-9a0f-acde48001122&active=TagDownload">pytorch2.9.0-ubuntu22.04-dtk26.04-py3.10_te2.10</a></td>
       <td>8</td>
       <td><=4096</td>
-      <td align="center"><a href="https://github.com/HYGON-AI/Megatron-LM-das/tree/core_v0.18.2/examples/qwen3.5">link</a></td>
+      <td align="center"><a href="https://github.com/HYGON-AI/Megatron-LM-das/tree/core_v0.18.2/examples/Qwen3.5">link</a></td>
     </tr>
     <tr>
       <td><a href="https://www.modelscope.cn/models/Qwen/Qwen3.5-2B">Qwen3.5-VL-2B</a></td>

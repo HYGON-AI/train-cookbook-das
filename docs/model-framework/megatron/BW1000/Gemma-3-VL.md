@@ -7,8 +7,9 @@ Gemma-3VL 是google开源的大语言模型, 语言模型有 4-27B 参数。
 ## 使用示例
 1. 根据所用框架 查看对应框架的快速开始
     - [megatron-lm 快速开始](https://github.com/HYGON-AI/Megatron-LM-das/blob/core_v0.18.2/docs/getting-started.md)
-    - [ms-swift 快速开始(暂无)]()
-    - [megatron-bridge 快速开始(暂无)]()
+    - [llamafactory 快速开始]()
+    - [ms-swift 快速开始]()
+    - [megatron-bridge 快速开始]()
 2. 执行模型对应的脚本
 
 ## 模型列表

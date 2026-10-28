@@ -11,18 +11,21 @@ MapTRv2 是一种端到端的高精地图构建模型，基于统一的 Transfor
   <thead>
     <tr>
       <th rowspan="2">模型</th>
-      <th rowspan="2">推荐卡数</th>
+      <th rowspan="2">测试卡数</th>
       <th rowspan="2">精度</th>
-      <th colspan="2" style="text-align:center">环境版本</th>
-      <th colspan="3" style="text-align:center">推荐训练参数</th>
-      <th rowspan="2">示例脚本</th>
+      <th colspan="3" style="text-align:center">训练参数</th>
+      <th colspan="3" style="text-align:center">模型精度</th>
+      <th rowspan="2">吞吐量(imgs/sec/gpu)</th>
+      <th rowspan="2">日志</th>
+      <th rowspan="2">环境构建</th>
     </tr>
     <tr>
-      <th>torch</th>
-      <th>mmcv</th>
-      <th>Batch Size</th>
-      <th>Global Batch Size</th>
-      <th>Epoch</th>
+      <th>batch size</th>
+      <th>global batch size</th>
+      <th>epoch</th>
+      <th>NDS</th>
+      <th>mAP</th>
+      <th>Final Loss</th>
     </tr>
   </thead>
   <tbody>
@@ -30,12 +33,15 @@ MapTRv2 是一种端到端的高精地图构建模型，基于统一的 Transfor
       <td>Maptrv2</td>
       <td>8</td>
       <td>BF16</td>
-      <td>2.7.1</td>
-      <td>1.6.1</td>
       <td>12</td>
       <td>96</td>
       <td>24</td>
-      <td><a href="https://developer.sourcefind.cn/codes/ts-models-opt/training/autonomous-driving-models/-/blob/bw1101_hygon/models/MapTRv2/start_maptrv2.sh">✅</a></td>
+      <td>-</td>
+      <td>0.5205</td>
+      <td>31.229</td>
+      <td>7.06</td>
+      <td><a href="./logs/bw1100_maptrv2_8card_bs12_24e_fp16.log">log</a></td>
+      <td><a href="https://developer.sourcefind.cn/codes/ts-models-opt/training/autonomous-driving-models/-/tree/bw1101_hygon/models/MapTRv2">link</a></td>
     </tr>
   </tbody>
 </table>
