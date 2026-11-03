@@ -1,0 +1,5 @@
+self-hosted-runner:
+  labels:
+    - hcu
+    - bw1000
+    - bmz18
