@@ -9,7 +9,7 @@ Qwen3-VL 是阿里通义千问第三代视觉多模态理解模型，支持 2B ~
     - [megatron-lm 快速开始](https://github.com/HYGON-AI/Megatron-LM-das/blob/core_v0.18.2/docs/getting-started.md)
     - [llamafactory 快速开始]()
     - [ms-swift 快速开始]()
-    - [megatron-bridge 快速开始]()
+    - [megatron-bridge 快速开始](https://github.com/HYGON-AI/Megatron-bridge-das/blob/main/docs/models/qwen/qwen3-vl.md)
 2. 执行模型对应的脚本
 
 ## 模型列表
@@ -47,27 +47,27 @@ Qwen3-VL 是阿里通义千问第三代视觉多模态理解模型，支持 2B ~
     </tr>
     <tr>
       <td><a href="https://www.modelscope.cn/models/Qwen/Qwen3-VL-8B-Instruct/files">Qwen3-VL-8B</a></td>
-      <td>megatron-lm</td>
-      <td>BF16</td><td><a href="https://developer.sourcefind.cn/servicelist/detail?post_id=a053d44c-b3c7-11f0-9a0f-acde48001122&active=TagDownload">pytorch2.9.0-ubuntu22.04-dtk26.04-py3.10_te2.10</a></td>
+      <td>megatron-bridge</td>
+      <td>BF16</td><td>harbor.sourcefind.cn:5443/hcu/admin/base/custom:megatron0.19.2-ubuntu22.04-dtk2610-py3.12-1009</td>
       <td>8</td>
-      <td><=4096</td>
-      <td align="center"><a href="https://github.com/HYGON-AI/Megatron-LM-das/tree/core_v0.18.2/examples/qwen3">link</a></td>
+      <td>4096</td>
+      <td align="center"><a href="https://github.com/HYGON-AI/Megatron-bridge-das/blob/main/examples/qwen/train_qwen3_vl_pretrain.sh">link</a></td>
     </tr>
     <tr>
-      <td>Qwen3-VL-32B</td>
-      <td>-</td>
-      <td>-</td><td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td align="center">正在适配</td>
+      <td><a href="https://www.modelscope.cn/models/Qwen/Qwen3-VL-32B-Instruct/files">Qwen3-VL-32B</a></td>
+      <td>megatron-bridge</td>
+      <td>BF16</td><td>harbor.sourcefind.cn:5443/hcu/admin/base/custom:megatron0.19.2-ubuntu22.04-dtk2610-py3.12-1009</td>
+      <td>32</td>
+      <td>4096</td>
+      <td align="center"><a href="https://github.com/HYGON-AI/Megatron-bridge-das/blob/main/examples/qwen/train_qwen3_vl_pretrain.sh">link</a></td>
     </tr>
     <tr>
       <td><a href="https://www.modelscope.cn/models/Qwen/Qwen3-VL-30B-A3B-Instruct/files">Qwen3-VL-30B-A3B</a></td>
-      <td>megatron-lm</td>
-      <td>BF16</td><td><a href="https://developer.sourcefind.cn/servicelist/detail?post_id=a053d44c-b3c7-11f0-9a0f-acde48001122&active=TagDownload">pytorch2.9.0-ubuntu22.04-dtk26.04-py3.10_te2.10</a></td>
+      <td>megatron-bridge</td>
+      <td>BF16</td><td>harbor.sourcefind.cn:5443/hcu/admin/base/custom:megatron0.19.2-ubuntu22.04-dtk2610-py3.12-1009</td>
       <td>32</td>
-      <td><=4096</td>
-      <td align="center"><a href="https://github.com/HYGON-AI/Megatron-LM-das/tree/core_v0.18.2/examples/qwen3">link</a></td>
+      <td>4096</td>
+      <td align="center"><a href="https://github.com/HYGON-AI/Megatron-bridge-das/blob/main/examples/qwen/train_qwen3_vl_pretrain.sh">link</a></td>
     </tr>
     <tr>
       <td>Qwen3-VL-235B-A22B</td>
@@ -98,7 +98,7 @@ Qwen3-VL 是阿里通义千问第三代视觉多模态理解模型，支持 2B ~
     <tr>
       <td><a href="https://www.modelscope.cn/models/Qwen/Qwen3-VL-8B-Instruct/files">Qwen3-VL-8B</a></td>
       <td>megatron-bridge</td>
-      <td>BF16</td><td><a href="https://developer.sourcefind.cn/servicelist/detail?post_id=a053d44c-b3c7-11f0-9a0f-acde48001122&active=TagDownload">pytorch2.9.0-ubuntu22.04-dtk26.04-py3.10_te2.10</a></td>
+      <td>BF16</td><td>harbor.sourcefind.cn:5443/hcu/admin/base/custom:megatron0.19.2-ubuntu22.04-dtk2610-py3.12-1009</td>
       <td>8</td>
       <td>4096</td>
       <td align="center"></td>

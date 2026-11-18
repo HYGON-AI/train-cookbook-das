@@ -9,7 +9,7 @@ GLM-5 是采用 MoE、MLA/DSA 稀疏注意力和 MTP 的大语言模型。
     - [megatron-lm 快速开始](https://github.com/HYGON-AI/Megatron-LM-das/blob/core_v0.18.2/docs/getting-started.md)
     - [llamafactory 快速开始]()
     - [ms-swift 快速开始]()
-    - [megatron-bridge 快速开始]()
+    - [megatron-bridge 快速开始](https://github.com/HYGON-AI/Megatron-bridge-das/blob/main/docs/models/glm/glm5-3.md)
 2. 执行模型对应的脚本
 
 ## 模型列表
@@ -31,11 +31,19 @@ GLM-5 是采用 MoE、MLA/DSA 稀疏注意力和 MTP 的大语言模型。
   <tbody>
     <tr>
       <td>GLM-5.2（7层/32专家）</td>
-      <td>megatron-lm</td>
-      <td>BF16</td><td><a href="http://10.16.1.152:5000/jenkins/model_test_env/mbridge:0.6.0-ubuntu22.04-dtk2604-py3.12-20260909-1017">mbridge:0.6.0-ubuntu22.04-dtk2604-py3.12-20260909-1017</a></td>
+      <td>megatron-bridge</td>
+      <td>BF16</td><td>harbor.sourcefind.cn:5443/hcu/admin/base/custom:megatron0.19.2-ubuntu22.04-dtk2610-py3.12-1009</td>
       <td>8</td>
       <td>4096</td>
-      <td align="center"><a href="http://42.228.13.241:10068/dcutoolkit/deeplearing/megatron-lm-dev/-/tree/3c5a399/examples/glm5_2">link</a></td>
+      <td align="center"><a href="https://github.com/HYGON-AI/Megatron-bridge-das/blob/main/examples/glm/train_glm52_pretrain.sh">link</a></td>
+    </tr>
+    <tr>
+      <td>GLM-5.2（4层）</td>
+      <td>megatron-bridge</td>
+      <td>BF16</td><td>harbor.sourcefind.cn:5443/hcu/admin/base/custom:megatron0.19.2-ubuntu22.04-dtk2610-py3.12-1009</td>
+      <td>32</td>
+      <td>4096</td>
+      <td align="center"><a href="https://github.com/HYGON-AI/Megatron-bridge-das/blob/main/examples/glm/train_glm53_pretrain.sh">link</a></td>
     </tr>
   </tbody>
 </table>
@@ -58,7 +66,7 @@ GLM-5 是采用 MoE、MLA/DSA 稀疏注意力和 MTP 的大语言模型。
     <tr>
       <td>GLM-5.2</td>
       <td>ms-swift</td>
-      <td>BF16</td><td><a href="10.16.1.152:5000/jenkins/model_test_env/megatron:0.19.2-ubuntu22.04-dtk2610-py3.12-1009">10.16.1.152:5000/jenkins/model_test_env/megatron:0.19.2-ubuntu22.04-dtk2610-py3.12-1009</a></td>
+      <td>BF16</td><td>harbor.sourcefind.cn:5443/hcu/admin/base/custom:megatron0.19.2-ubuntu22.04-dtk2610-py3.12-1009</td>
       <td>32</td>
       <td>4096</td>
       <td align="center">sft</td>
@@ -66,7 +74,7 @@ GLM-5 是采用 MoE、MLA/DSA 稀疏注意力和 MTP 的大语言模型。
     <tr>
       <td>GLM-5.3</td>
       <td>ms-swift</td>
-      <td>BF16</td><td><a href="10.16.1.152:5000/jenkins/model_test_env/megatron:0.19.2-ubuntu22.04-dtk2610-py3.12-1009">10.16.1.152:5000/jenkins/model_test_env/megatron:0.19.2-ubuntu22.04-dtk2610-py3.12-1009</a></td>
+      <td>BF16</td><td>harbor.sourcefind.cn:5443/hcu/admin/base/custom:megatron0.19.2-ubuntu22.04-dtk2610-py3.12-1009</td>
       <td>32</td>
       <td>4096</td>
       <td align="center">sft</td>
