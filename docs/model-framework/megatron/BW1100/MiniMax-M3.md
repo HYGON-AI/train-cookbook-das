@@ -1,0 +1,72 @@
+# MiniMax-M3
+
+## 模型简介
+
+MiniMax-M3 是一个原生多模态模型，支持 1M 上下文长度。其总参数量约为 4280 亿，激活参数量约为 230 亿。
+
+## 使用示例
+1. 根据所用框架 查看对应框架的快速开始
+    - [megatron-lm 快速开始](https://github.com/HYGON-AI/Megatron-LM-das/blob/core_v0.18.2/docs/getting-started.md)
+    - [llamafactory 快速开始]()
+    - [ms-swift 快速开始]()
+    - [megatron-bridge 快速开始](https://github.com/HYGON-AI/Megatron-bridge-das/blob/main/docs/models/minimax/minimax-m3.md)
+2. 执行模型对应的脚本
+
+## 模型列表
+
+### 全参 预训练/sft
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">模型</th>
+      <th rowspan="2">框架</th>
+      <th rowspan="2">精度</th>
+      <th rowspan="2">镜像</th>
+      <th rowspan="2">推荐卡数</th>
+      <th rowspan="2">序列长度</th>
+      <th rowspan="2">示例脚本</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MiniMax-M3-10layer</td>
+      <td>megatron-bridge</td>
+      <td>BF16</td><td>harbor.sourcefind.cn:5443/hcu/admin/base/custom:megatron0.19.2-ubuntu22.04-dtk2610-py3.12-1009</td>
+      <td>16(10层)</td>
+      <td>4096</td>
+      <td align="center"><a href="https://github.com/HYGON-AI/Megatron-bridge-das/blob/main/examples/minimax/train_minimax_m3_pretrain.sh">link</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### lora 微调
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">模型</th>
+      <th rowspan="2">框架</th>
+      <th rowspan="2">精度</th>
+      <th rowspan="2">镜像</th>
+      <th rowspan="2">推荐卡数</th>
+      <th rowspan="2">序列长度</th>
+      <th rowspan="2">示例脚本</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td><td></td>
+      <td></td>
+      <td></td>
+      <td align="center"></td>
+    </tr>
+  </tbody>
+</table>
+
+## HCU 适配注意
+
+- MiniMax-M3 原生支持 bf16，在 HCU 上运行稳定
+- MiniMax-M3 为 MoE 模型，总参数约 4280 亿，激活参数约 230 亿

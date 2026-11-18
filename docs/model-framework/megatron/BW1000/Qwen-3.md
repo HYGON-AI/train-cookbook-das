@@ -56,41 +56,41 @@ Qwen3 是阿里通义千问第三代大语言模型，支持 0.6B ~ 235B 多种�
     <tr>
       <td><a href="https://www.modelscope.cn/models/Qwen/Qwen3-8B">Qwen3-8B</a></td>
       <td>megatron-lm</td>
-      <td>BF16</td><td><a href="https://developer.sourcefind.cn/servicelist/detail?post_id=a053d44c-b3c7-11f0-9a0f-acde48001122&active=TagDownload">pytorch2.9.0-ubuntu22.04-dtk26.04-py3.10_te2.10</a></td>
+      <td>BF16</td><td>harbor.sourcefind.cn:5443/hcu/admin/base/custom:megatron0.19.2-ubuntu22.04-dtk2610-py3.12-1009</td>
       <td>8</td>
-      <td><=32768</td>
+      <td>32768</td>
       <td align="center"><a href="https://github.com/HYGON-AI/Megatron-LM-das/tree/core_v0.18.2/examples/qwen3">link</a></td>
     </tr>
     <tr>
       <td><a href="https://www.modelscope.cn/models/Qwen/Qwen3-14B">Qwen3-14B</a></td>
       <td>megatron-lm</td>
-      <td>BF16</td><td><a href="https://developer.sourcefind.cn/servicelist/detail?post_id=a053d44c-b3c7-11f0-9a0f-acde48001122&active=TagDownload">pytorch2.9.0-ubuntu22.04-dtk26.04-py3.10_te2.10</a></td>
+      <td>BF16</td><td>harbor.sourcefind.cn:5443/hcu/admin/base/custom:megatron0.19.2-ubuntu22.04-dtk2610-py3.12-1009</td>
       <td>8</td>
-      <td><=4096</td>
+      <td>4096</td>
       <td align="center"><a href="https://github.com/HYGON-AI/Megatron-LM-das/tree/core_v0.18.2/examples/qwen3">link</a></td>
     </tr>
     <tr>
       <td><a href="https://www.modelscope.cn/models/Qwen/Qwen3-32B">Qwen3-32B</a></td>
       <td>megatron-lm</td>
-      <td>BF16</td><td><a href="https://developer.sourcefind.cn/servicelist/detail?post_id=a053d44c-b3c7-11f0-9a0f-acde48001122&active=TagDownload">pytorch2.9.0-ubuntu22.04-dtk26.04-py3.10_te2.10</a></td>
+      <td>BF16</td><td>harbor.sourcefind.cn:5443/hcu/admin/base/custom:megatron0.19.2-ubuntu22.04-dtk2610-py3.12-1009</td>
       <td>32</td>
-      <td><=8192</td>
+      <td>8192</td>
       <td align="center"><a href="https://github.com/HYGON-AI/Megatron-LM-das/tree/core_v0.18.2/examples/qwen3">link</a></td>
     </tr>
     <tr>
       <td><a href="https://www.modelscope.cn/models/Qwen/Qwen3-30B-A3B">Qwen3-30B-A3B</a></td>
       <td>megatron-lm</td>
-      <td>BF16</td><td><a href="https://developer.sourcefind.cn/servicelist/detail?post_id=a053d44c-b3c7-11f0-9a0f-acde48001122&active=TagDownload">pytorch2.9.0-ubuntu22.04-dtk26.04-py3.10_te2.10</a></td>
+      <td>BF16</td><td>harbor.sourcefind.cn:5443/hcu/admin/base/custom:megatron0.19.2-ubuntu22.04-dtk2610-py3.12-1009</td>
       <td>32</td>
-      <td><=8192</td>
+      <td>8192</td>
       <td align="center"><a href="https://github.com/HYGON-AI/Megatron-LM-das/tree/core_v0.18.2/examples/qwen3">link</a></td>
     </tr>
     <tr>
       <td><a href="https://www.modelscope.cn/models/Qwen/Qwen3-235B-A22B">Qwen3-235B-A22B</a></td>
       <td>megatron-lm</td>
-      <td>BF16</td><td><a href="https://developer.sourcefind.cn/servicelist/detail?post_id=a053d44c-b3c7-11f0-9a0f-acde48001122&active=TagDownload">pytorch2.9.0-ubuntu22.04-dtk26.04-py3.10_te2.10</a></td>
+      <td>BF16</td><td>harbor.sourcefind.cn:5443/hcu/admin/base/custom:megatron0.19.2-ubuntu22.04-dtk2610-py3.12-1009</td>
       <td>128</td>
-      <td><=4096</td>
+      <td>4096</td>
       <td align="center">-</td>
     </tr>
   </tbody>
@@ -114,7 +114,7 @@ Qwen3 是阿里通义千问第三代大语言模型，支持 0.6B ~ 235B 多种�
     <tr>
       <td><a href="https://www.modelscope.cn/models/Qwen/Qwen3-8B">Qwen3-8B</a></td>
       <td>megatron-bridge</td>
-      <td>BF16</td><td><a href="https://developer.sourcefind.cn/servicelist/detail?post_id=a053d44c-b3c7-11f0-9a0f-acde48001122&active=TagDownload">pytorch2.9.0-ubuntu22.04-dtk26.04-py3.10_te2.10</a></td>
+      <td>BF16</td><td>harbor.sourcefind.cn:5443/hcu/admin/base/custom:megatron0.19.2-ubuntu22.04-dtk2610-py3.12-1009</td>
       <td>8</td>
       <td>4096</td>
       <td align="center"></td>

@@ -9,7 +9,7 @@ MiniMax-M3 是一个原生多模态模型，支持 1M 上下文长度。其总�
     - [megatron-lm 快速开始](https://github.com/HYGON-AI/Megatron-LM-das/blob/core_v0.18.2/docs/getting-started.md)
     - [llamafactory 快速开始]()
     - [ms-swift 快速开始]()
-    - [megatron-bridge 快速开始]()
+    - [megatron-bridge 快速开始](https://github.com/HYGON-AI/Megatron-bridge-das/blob/main/docs/models/minimax/minimax-m3.md)
 2. 执行模型对应的脚本
 
 ## 模型列表
@@ -32,7 +32,7 @@ MiniMax-M3 是一个原生多模态模型，支持 1M 上下文长度。其总�
     <tr>
       <td><a href="https://www.modelscope.cn/models/MiniMax/MiniMax-M3">MiniMax-M3</a></td>
       <td>Megatron-Bridge-das</td>
-      <td>BF16</td><td><a href="10.16.1.152:5000/jenkins/model_test_env/megatron:0.19.2-ubuntu22.04-dtk2610-py3.12-1009">10.16.1.152:5000/jenkins/model_test_env/megatron:0.19.2-ubuntu22.04-dtk2610-py3.12-1009</a></td>
+      <td>BF16</td><td>harbor.sourcefind.cn:5443/hcu/admin/base/custom:megatron0.19.2-ubuntu22.04-dtk2610-py3.12-1009</td>
       <td>16(2层)</td>
       <td>4096</td>
       <td align="center"><a href="https://github.com/HYGON-AI/Megatron-bridge-das/blob/main/examples/minimax/train_minimax_m3_pretrain.sh">link</a></td>

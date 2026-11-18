@@ -9,7 +9,7 @@ DeepSeek-V4 是一个开源的MoE大语言模型, 有 pro(1.6T-A49B) 和 flash(2
     - [megatron-lm 快速开始](https://github.com/HYGON-AI/Megatron-LM-das/blob/core_v0.18.2/docs/getting-started.md)
     - [llamafactory 快速开始]()
     - [ms-swift 快速开始]()
-    - [megatron-bridge 快速开始]()
+    - [megatron-bridge 快速开始](https://github.com/HYGON-AI/Megatron-bridge-das/blob/dsv41/docs/models/deepseek/deepseek-v4-sft.md)
 2. 执行模型对应的脚本
 
 ## 模型列表
@@ -32,10 +32,18 @@ DeepSeek-V4 是一个开源的MoE大语言模型, 有 pro(1.6T-A49B) 和 flash(2
     <tr>
       <td><a href="https://www.modelscope.cn/models/deepseek-ai/DeepSeek-V4-Flash">DeepSeek-V4-Flash</a></td>
       <td>Megatron-Bridge-das</td>
-      <td>BF16</td><td><a href="10.16.1.152:5000/jenkins/model_test_env/megatron:0.19.2-ubuntu22.04-dtk2610-py3.12-1009">10.16.1.152:5000/jenkins/model_test_env/megatron:0.19.2-ubuntu22.04-dtk2610-py3.12-1009</a></td>
+      <td>BF16</td><td>harbor.sourcefind.cn:5443/hcu/admin/base/custom:megatron0.19.2-ubuntu22.04-dtk2610-py3.12-1009</td>
       <td>32(6层)</td>
       <td>4096</td>
       <td align="center"><a href="https://github.com/HYGON-AI/Megatron-bridge-das/blob/main/examples/deepseek/train_deepseekv4_flash_pretrain.sh">link</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.modelscope.cn/models/deepseek-ai/DeepSeek-V4.1-Flash">DeepSeek-V4.1-Flash</a></td>
+      <td>Megatron-Bridge-das</td>
+      <td>BF16</td><td>harbor.sourcefind.cn:5443/hcu/admin/base/custom:megatron0.19.2-ubuntu22.04-dtk2610-py3.12-1009</td>
+      <td>32(4层)</td>
+      <td>4096</td>
+      <td align="center"><a href="https://github.com/HYGON-AI/Megatron-bridge-das/blob/dsv41/examples/deepseek/train_deepseekv41_flash_pretrain.sh">link</a></td>
     </tr>
   </tbody>
 </table>
@@ -58,10 +66,10 @@ DeepSeek-V4 是一个开源的MoE大语言模型, 有 pro(1.6T-A49B) 和 flash(2
     <tr>
       <td><a href="https://www.modelscope.cn/models/deepseek-ai/DeepSeek-V4-Flash">DeepSeek-V4-Flash</a></td>
       <td>megatron-bridge</td>
-      <td>BF16</td><td><a href="https://developer.sourcefind.cn/servicelist/detail?post_id=a053d44c-b3c7-11f0-9a0f-acde48001122&active=TagDownload">pytorch2.9.0-ubuntu22.04-dtk26.04-py3.10_te2.10</a></td>
+      <td>BF16</td><td>harbor.sourcefind.cn:5443/hcu/admin/base/custom:megatron0.19.2-ubuntu22.04-dtk2610-py3.12-1009</td>
+      <td>32</td>
       <td>1024</td>
-      <td>4096</td>
-      <td align="center">sft</td>
+      <td align="center"><a href="https://github.com/HYGON-AI/Megatron-bridge-das/blob/dev/examples_hcu/deepseekv4_flash/train_deepseekv4_flash_peft.sh">link</a></td>
     </tr>
   </tbody>
 </table>
