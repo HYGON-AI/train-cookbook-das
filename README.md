@@ -100,9 +100,9 @@
       <td align="center">-</td>
     </tr>
     <tr>
-      <td>GLM-5/5.1/5.2</td>
+      <td>GLM-5/5.1/5.2/5.3</td>
       <td align="center"><a href="docs/model-framework/megatron/BW1000/GLM-5.md">✅</a></td>
-      <td align="center">🚧</td>
+      <td align="center"><a href="docs/model-framework/megatron/BW1100/GLM-5.md">✅</a></td>
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
@@ -157,7 +157,7 @@
     <tr>
       <td>Qwen 1.5</td>
       <td align="center"><a href="docs/model-framework/megatron/BW1000/Qwen-1.5.md">✅</a></td>
-      <td align="center">🚧</td>
+      <td align="center"><a href="docs/model-framework/megatron/BW1100/Qwen-1.5.md">✅</a></td>
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
@@ -168,7 +168,7 @@
     <tr>
       <td>Qwen 2/2.5</td>
       <td align="center"><a href="docs/model-framework/megatron/BW1000/Qwen-2.md">✅</a></td>
-      <td align="center">🚧</td>
+      <td align="center"><a href="docs/model-framework/megatron/BW1100/Qwen-2.md">✅</a></td>
       <td align="center">-</td>
       <td align="center"><a href="docs/model-framework/verl/BW1100/LLM/Qwen-2.md">✅</a></td>
       <td align="center">-</td>
@@ -190,7 +190,7 @@
     <tr>
       <td>Qwen3.5</td>
       <td align="center"><a href="docs/model-framework/megatron/BW1000/Qwen-3.5.md">✅</a></td>
-      <td align="center">🚧</td>
+      <td align="center"><a href="docs/model-framework/megatron/BW1100/Qwen-3.5.md">✅</a></td>
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
@@ -212,7 +212,7 @@
     <tr>
       <td>MiniMax-M3</td>
       <td align="center"><a href="docs/model-framework/megatron/BW1000/MiniMax-M3.md">✅</a></td>
-      <td align="center">🚧</td>
+      <td align="center"><a href="docs/model-framework/megatron/BW1100/MiniMax-M3.md">✅</a></td>
       <td align="center">-</td>
       <td align="center">-</td>
       <td align="center">-</td>
@@ -374,8 +374,8 @@
     </tr>
     <tr>
       <td>OpenVLA</td>
-      <td align="center">🚧</td>
-      <td align="center">🚧</td>
+      <td align="center"><a href="docs/model-framework/VLA/BW1000/OpenVLA.md">✅</a></td>
+      <td align="center"><a href="docs/model-framework/VLA/BW1100/OpenVLA.md">✅</a></td>
     </tr>
     <tr>
       <td>StarVLA</td>
@@ -397,6 +397,7 @@
 - [Verl-das 快速开始](https://github.com/HYGON-AI/verl-das)。
 - [Slime-das 快速开始](docs/framework/slime-das.md)。
 - [ms-swift 快速开始(暂无)]()。
+- [megatron-bridge-das 快速开始](https://github.com/HYGON-AI/Megatron-bridge-das/tree/main)。
 - [llamafactory 快速开始(暂无)]()。
 - [mmcv 快速开始(暂无)]()。
 - [diffsynthstudio 快速开始](./docs/framework/diffsynthstudio.md)。

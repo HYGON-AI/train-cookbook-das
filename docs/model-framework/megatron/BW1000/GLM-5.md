@@ -38,7 +38,7 @@ GLM-5 是采用 MoE、MLA/DSA 稀疏注意力和 MTP 的大语言模型。
       <td align="center"><a href="https://github.com/HYGON-AI/Megatron-bridge-das/blob/main/examples/glm/train_glm52_pretrain.sh">link</a></td>
     </tr>
     <tr>
-      <td>GLM-5.2（4层）</td>
+      <td>GLM-5.3（4层）</td>
       <td>megatron-bridge</td>
       <td>BF16</td><td>harbor.sourcefind.cn:5443/hcu/admin/base/custom:megatron0.19.2-ubuntu22.04-dtk2610-py3.12-1009</td>
       <td>32</td>
